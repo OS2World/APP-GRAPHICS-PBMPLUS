@@ -1,0 +1,66 @@
+
+
+pnmmargin(1)               Unix Programmer's Manual               pnmmargin(1)
+
+
+NNNAAAMMMEEE
+     pnmmargin - add a margin to a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmmmmaaarrrgggiiinnn [-wwwhhhiiittteee|-bbblllaaaccckkk|-cccooolllooorrr _c_o_l_o_r_s_p_e_c] _s_i_z_e [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable anymap as input.  Adds a margin of the specified  number
+     of pixels, and produces a portable anymap as output.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     You can specify the margin color with  the  ---wwwhhhiiittteee,  ---bbblllaaaccckkk,  and  ---cccooolllooorrr
+     flags.  If no color is specified, the program makes a guess.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnm(5)
+
+BBBUUUGGGSSS
+     It's a script.  Scripts are not portable to non-Unix environments.
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               9 January 1991                                1
+
+

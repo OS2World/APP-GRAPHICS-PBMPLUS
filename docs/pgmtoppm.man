@@ -1,0 +1,66 @@
+
+
+pgmtoppm(1)                Unix Programmer's Manual                pgmtoppm(1)
+
+
+NNNAAAMMMEEE
+     pgmtoppm - colorize a portable graymap into a portable pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppgggmmmtttoooppppppmmm _c_o_l_o_r_s_p_e_c [_p_g_m_f_i_l_e]
+     pppgggmmmtttoooppppppmmm _c_o_l_o_r_s_p_e_c_1-_c_o_l_o_r_s_p_e_c_2 [_p_g_m_f_i_l_e]
+     pppgggmmmtttoooppppppmmm ---mmmaaappp _m_a_p_f_i_l_e [_p_g_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable graymap as input.  Colorizes it by multiplying  the  the
+     gray  values by specified color or colors, and produces a portable pixmap
+     as output.
+
+     If only one color is specified, black in the pgm  file  stays  black  and
+     white in the pgm file turns into the specified color in the ppm file.  If
+     two colors (separated by a dash) are specified, then black gets mapped to
+     the first color and white gets mapped to the second.
+
+     The colors can be specified in three ways.  One, as a name, assuming that
+     a  pointer  to an X11-style color names file was compiled in.  Two, as an
+     X11-style   hexidecimal   number:   #rgb,   #rrggbb,    #rrrgggbbb,    or
+     #rrrrggggbbbb.   Three,  as  a  triplet of decimal floating point numbers
+     separated by commas: r.r,g.g,b.b.
+
+     Also, the ---mmmaaappp flag lets you specify an entire colormap to be used.   The
+     mapfile  is just a _p_p_m file; it can be any shape, all that matters is the
+     colors in it and their order.  In this case, black gets mapped  into  the
+     first color in the map file, and white gets mapped to the last.
+
+SSSEEEEEE AAALLLSSSOOO
+     rgb3toppm(1), ppmtopgm(1), ppmtorgb3(1), ppm(5), pgm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               11 January 1991                               1
+
+

@@ -1,0 +1,132 @@
+
+
+libpgm(3)                  Unix Programmer's Manual                  libpgm(3)
+
+
+NNNAAAMMMEEE
+     libpgm - functions to support portable graymap programs
+
+SSSYYYNNNOOOPPPSSSIIISSS
+
+     #include <pgm.h>
+     cc ... libpgm.a libpbm.a
+
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+
+     typedef ... gray;
+     #define PGM_MAXMAXVAL ...
+     extern gray pgm_pbmmaxval;
+
+     EEEaaaccchhh gggrrraaayyy should contain only the values  between  000  and  PPPGGGMMM___MMMAAAXXXMMMAAAXXXVVVAAALLL.
+     pppgggmmm___pppbbbmmmmmmaaaxxxvvvaaalll  is  the  maxval  used when a PGM program reads a PBM file.
+     Normally it is 1; however, for some programs, a larger value gives better
+     results.
+
+     #define PGM_FORMAT ...
+     #define RPGM_FORMAT ...
+     #define PGM_TYPE PGM_FORMAT
+     int PGM_FORMAT_TYPE( int format )
+
+     FFFooorrr dddiiissstttiiinnnggguuuiiissshhhiiinnnggg dddiiiffffffeeerrreeennnttt fffiiillleee fffooorrrmmmaaatttsss aaannnddd tttyyypppeeesss...
+
+     vvvoooiiiddd pppgggmmm___iiinnniiittt((( iiinnnttt*** aaarrrgggcccPPP,,, ccchhhaaarrr*** aaarrrgggvvv[[[]]] )))
+
+     AAAllllll PPPGGGMMM ppprrrooogggrrraaammmsss mmmuuusssttt cccaaallllll ttthhhiiisss rrrooouuutttiiinnneee...
+
+     gggrrraaayyy****** pppgggmmm___aaallllllooocccaaarrrrrraaayyy((( iiinnnttt cccooolllsss,,, iiinnnttt rrrooowwwsss )))
+
+     AAAllllllooocccaaattteee aaannn aaarrrrrraaayyy ooofff gggrrraaayyysss...
+
+     gggrrraaayyy*** pppgggmmm___aaallllllooocccrrrooowww((( iiinnnttt cccooolllsss )))
+
+     AAAllllllooocccaaattteee aaa rrrooowww ooofff ttthhheee gggiiivvveeennn nnnuuummmbbbeeerrr ooofff gggrrraaayyysss...
+
+     vvvoooiiiddd pppgggmmm___fffrrreeeeeeaaarrrrrraaayyy((( gggrrraaayyy****** gggrrraaayyysss,,, iiinnnttt rrrooowwwsss )))
+
+     FFFrrreeeeee ttthhheee aaarrrrrraaayyy  aaallllllooocccaaattteeeddd  wwwiiittthhh  pppgggmmm___aaallllllooocccaaarrrrrraaayyy((()))  containing  the  given
+     number of rows.
+
+     void pgm_freerow( gray* grayrow )
+
+     FFFrrreeeeee aaa rrrooowww ooofff gggrrraaayyysss...
+
+     vvvoooiiiddd pppgggmmm___rrreeeaaadddpppgggmmmiiinnniiittt((( FFFIIILLLEEE*** fffppp,,, iiinnnttt*** cccooolllsssPPP,,, iiinnnttt***  rrrooowwwsssPPP,,,  gggrrraaayyy***  mmmaaaxxxvvvaaalllPPP,,,
+     iiinnnttt*** fffooorrrmmmaaatttPPP )))
+
+     RRReeeaaaddd ttthhheee hhheeeaaadddeeerrr fffrrrooommm aaa PPPGGGMMM fffiiillleee,,, fffiiilllllliiinnnggg iiinnn ttthhheee rrrooowwwsss,,,  cccooolllsss,,,  mmmaaaxxxvvvaaalll  aaannnddd
+     fffooorrrmmmaaattt vvvaaarrriiiaaabbbllleeesss...
+
+     vvvoooiiiddd pppgggmmm___rrreeeaaadddpppgggmmmrrrooowww((( FFFIIILLLEEE*** fffppp,,, gggrrraaayyy*** gggrrraaayyyrrrooowww,,, iiinnnttt cccooolllsss,,, gggrrraaayyy mmmaaaxxxvvvaaalll,,,  iiinnnttt
+     fffooorrrmmmaaattt )))
+
+
+                                                                             1
+
+
+
+
+libpgm(3)                  Unix Programmer's Manual                  libpgm(3)
+
+
+     RRReeeaaaddd aaa rrrooowww ooofff gggrrraaayyysss iiinnntttooo ttthhheee gggrrraaayyyrrrooowww aaarrrrrraaayyy...   FFFooorrrmmmaaattt,,,  cccooolllsss,,,  aaannnddd  mmmaaaxxxvvvaaalll
+     wwweeerrreee fffiiilllllleeeddd iiinnn bbbyyy pppgggmmm___rrreeeaaadddpppgggmmmiiinnniiittt((())).
+
+     gray** pgm_readpgm( FILE* fp, int* colsP, int* rowsP, gray* maxvalP )
+
+     RRReeeaaaddd aaannn eeennntttiiirrreee gggrrraaayyymmmaaappp fffiiillleee iiinnntttooo mmmeeemmmooorrryyy,,, rrreeetttuuurrrnnniiinnnggg  ttthhheee  aaallllllooocccaaattteeeddd  aaarrrrrraaayyy
+     aaannnddd  fffiiilllllliiinnnggg  iiinnn  ttthhheee  rrrooowwwsss,,,  cccooolllsss  aaannnddd  mmmaaaxxxvvvaaalll vvvaaarrriiiaaabbbllleeesss...  TTThhhiiisss fffuuunnnccctttiiiooonnn
+     cccooommmbbbiiinnneeesss pppgggmmm___rrreeeaaadddpppgggmmmiiinnniiittt((())), pppgggmmm___aaallllllooocccaaarrrrrraaayyy((())) and pppgggmmm___rrreeeaaadddpppgggmmmrrrooowww((())).
+
+     void pgm_writepgminit( FILE* fp, int cols, int  rows,  gray  maxval,  int
+     forceplain )
+
+     WWWrrriiittteee ttthhheee hhheeeaaadddeeerrr fffooorrr aaa pppooorrrtttaaabbbllleee gggrrraaayyymmmaaappp fffiiillleee...  TTThhheee fffooorrrccceeeppplllaaaiiinnn ffflllaaaggg fffooorrrccceeesss
+     aaa ppplllaaaiiinnn-fffooorrrmmmaaattt fffiiillleee tttooo bbbeee wwwrrriiitttttteeennn,,, aaasss oooppppppooossseeeddd tttooo aaa rrraaawww-fffooorrrmmmaaattt ooonnneee...
+
+     vvvoooiiiddd pppgggmmm___wwwrrriiittteeepppgggmmmrrrooowww((( FFFIIILLLEEE*** fffppp,,, gggrrraaayyy*** gggrrraaayyyrrrooowww,,, iiinnnttt cccooolllsss,,, gggrrraaayyy mmmaaaxxxvvvaaalll,,, iiinnnttt
+     fffooorrrccceeeppplllaaaiiinnn )))
+
+     WWWrrriiittteee aaa rrrooowww fffrrrooommm aaa pppooorrrtttaaabbbllleee gggrrraaayyymmmaaappp...
+
+     vvvoooiiiddd pppgggmmm___wwwrrriiittteeepppgggmmm((( FFFIIILLLEEE*** fffppp,,, gggrrraaayyy******  gggrrraaayyysss,,,  iiinnnttt  cccooolllsss,,,  iiinnnttt  rrrooowwwsss,,,  gggrrraaayyy
+     mmmaaaxxxvvvaaalll,,, iiinnnttt fffooorrrccceeeppplllaaaiiinnn )))
+
+     WWWrrriiittteee ttthhheee hhheeeaaadddeeerrr aaannnddd aaallllll dddaaatttaaa fffooorrr  aaa  pppooorrrtttaaabbbllleee  gggrrraaayyymmmaaappp...   TTThhhiiisss  fffuuunnnccctttiiiooonnn
+     cccooommmbbbiiinnneeesss pppgggmmm___wwwrrriiittteeepppgggmmmiiinnniiittt((())) and pppgggmmm___wwwrrriiittteeepppgggmmmrrrooowww((())).
+
+SSSEEEEEE AAALLLSSSOOO
+     libpbm(3), libppm(3), libpnm(3)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Tony Hansen and Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                             2
+
+

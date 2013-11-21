@@ -1,0 +1,66 @@
+
+
+ppmtopuzz(1)               Unix Programmer's Manual               ppmtopuzz(1)
+
+
+NNNAAAMMMEEE
+     ppmtopuzz - convert a portable pixmap into an X11 "puzzle" file
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     ppppppmmmtttooopppuuuzzzzzz [_p_p_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable pixmap as input.   Produces  an  X11  "puzzle"  file  as
+     output.  A "puzzle" file is for use with the _p_u_z_z_l_e program included with
+     the X11 distribution - _p_u_z_z_l_e's ---pppiiiccctttuuurrreee flag lets you specify  an  image
+     file.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppm(5), puzzle(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               22 August 1990                                1
+
+

@@ -1,0 +1,66 @@
+
+
+tifftopnm(1)               Unix Programmer's Manual               tifftopnm(1)
+
+
+NNNAAAMMMEEE
+     tifftopnm - convert a TIFF file into a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     tttiiifffffftttooopppnnnmmm [-hhheeeaaadddeeerrrddduuummmppp] [_t_i_f_f_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a TIFF file as input.  Produces a portable anymap as  output.   The
+     type  of  the  output  file  depends  on the input file - if it's black &
+     white, a _p_b_m file is written, else if it's grayscale a _p_g_m file,  else  a
+     _p_p_m file.  The program tells you which type it is writing.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---hhheeeaaadddeeerrrddduuummmppp
+          Dump TIFF file information  to  stderr.   This  information  may  be
+          useful in debugging TIFF file conversion problems.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmtotiff(1), pnm(5)
+
+BBBUUUGGGSSS
+     This program is not self-contained.  To use it you must  fetch  the  TIFF
+     Software  package  listed in the OTHER.SYSTEMS file and configure PBMPLUS
+     to  use  libtiff.   See  PBMPLUS's   Makefile   for   details   on   this
+     configuration.
+
+     This program is a twisty little maze of #ifdefs, all different.
+
+AAAUUUTTTHHHOOORRR
+     Derived by Jef Poskanzer from tif2ras.c, which is Copyright (c)  1990  by
+     Sun     Microsystems,     Inc.      Author:     Patrick    J.    Naughton
+     (naughton@wind.sun.com).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               13 January 1991                               1
+
+

@@ -1,0 +1,66 @@
+
+
+pnmfile(1)                 Unix Programmer's Manual                 pnmfile(1)
+
+
+NNNAAAMMMEEE
+     pnmfile - describe a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmfffiiillleee [_p_n_m_f_i_l_e] ...
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads  one  or  more  portable  anymaps  as  input.   Writes  out   short
+     descriptions  of  the  image  type, size, etc.  This is mostly for use in
+     shell scripts, so the format is not particularly pretty.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnm(5), file(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               9 January 1991                                1
+
+

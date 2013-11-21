@@ -1,0 +1,66 @@
+
+
+xpmtoppm(1)                Unix Programmer's Manual                xpmtoppm(1)
+
+
+NNNAAAMMMEEE
+     xpmtoppm - convert an X11 pixmap into a portable pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     xxxpppmmmtttoooppppppmmm [_x_p_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads an X11 pixmap (XPM)  as  input.   Produces  a  portable  pixmap  as
+     output.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppmtoxpm(1), ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               16 August 1990                                1
+
+

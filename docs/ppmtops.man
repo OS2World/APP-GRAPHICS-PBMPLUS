@@ -1,0 +1,66 @@
+
+
+ppmtops(1)                 Unix Programmer's Manual                 ppmtops(1)
+
+
+NNNAAAMMMEEE
+     ppmtops - convert a portable pixmap into color Encapsulated PostScript
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     ppppppmmmtttooopppsss [-ssscccaaallleee _s] [_p_p_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable pixmap as input.  Produces  Encapsulated  PostScript  as
+     output,  using the colorimage operator.  This operator is only defined on
+     color printers and very recent B&W printers.  Most of the time  you  will
+     NOT want to use ppmtops; instead, do a ppppppmmmtttooopppgggmmm ||| pppgggmmmtttooopppsss.
+
+     Note that there is no pstoppm tool  -  this  transformation  is  one-way,
+     because  a  pstoppm  tool would be a full-fledged PostScript interpreter,
+     which is beyond the scope of this package.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---ssscccaaallleee
+          Controls the scale of the result.  The default scale is 1, which  on
+          a  300  dpi  printer  such as the Apple LaserWriter makes the output
+          look about the same size as the input would if it was displayed on a
+          typical 72 dpi screen.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppm(5), pgmtops(1), psidtopgm(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              01 September 1989                              1
+
+

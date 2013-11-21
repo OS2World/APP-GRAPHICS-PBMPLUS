@@ -1,0 +1,66 @@
+
+
+pbmtolj(1)                 Unix Programmer's Manual                 pbmtolj(1)
+
+
+NNNAAAMMMEEE
+     pbmtolj - convert a portable bitmap into HP LaserJet format
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmtttooollljjj [-rrreeesssooollluuutttiiiooonnn _N] [_p_b_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable bitmap as input.  Produces HP LaserJet data as output.
+
+     Note that there is no ljtopbm tool.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---rrreeesssooollluuutttiiiooonnn
+          Specifies the resolution of the  output  device,  in  dpi.   Typical
+          values are 75, 100, 150, 300.  The default is 75.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1988 by Jef Poskanzer and Michael Haberler.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               29 August 1988                                1
+
+

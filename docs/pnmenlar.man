@@ -1,0 +1,66 @@
+
+
+pnmenlarge(1)              Unix Programmer's Manual              pnmenlarge(1)
+
+
+NNNAAAMMMEEE
+     pnmenlarge - read a portable anymap and enlarge it N times
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmeeennnlllaaarrrgggeee _N [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable anymap as input.  Replicates its  pixels  _N  times,  and
+     produces a portable anymap as output.
+
+     _p_n_m_e_n_l_a_r_g_e can only enlarge by integer  factors.   The  slower  but  more
+     general  _p_n_m_s_c_a_l_e  can  enlarge  or  reduce  by  arbitrary  factors,  and
+     _p_b_m_r_e_d_u_c_e can reduce by integer factors, but only for bitmaps.
+
+     If you enlarge by a factor of 3  or  more,  you  should  probably  add  a
+     _p_n_m_s_m_o_o_t_h  step;  otherwise,  you  can  see  the  original  pixels in the
+     resulting image.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbmreduce(1), pnmscale(1), pnmsmooth(1), pnm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              26 February 1989                               1
+
+

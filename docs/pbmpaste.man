@@ -1,0 +1,66 @@
+
+
+pbmpaste(1)                Unix Programmer's Manual                pbmpaste(1)
+
+
+NNNAAAMMMEEE
+     pbmpaste - paste a rectangle into a portable bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmpppaaasssttteee [-rrreeeppplllaaaccceee|-ooorrr|-aaannnddd|-xxxooorrr] _f_r_o_m_p_b_m_f_i_l_e _x _y [_i_n_t_o_p_b_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads two portable bitmaps as input.  Inserts the first bitmap  into  the
+     second at the specified location, and produces a portable bitmap the same
+     size as the second as output.  If the second bitmap is not specified,  it
+     is  read from stdin.  The _x and _y can be negative, in which case they are
+     interpreted relative to the right and bottom of the bitmap, respectively.
+
+     This tool is useful in combination with _p_n_m_c_u_t.   For  instance,  if  you
+     want to edit a small segment of a large bitmap, and your bitmap editor is
+     TOO STUPID to edit the large bitmap, you can cut out the segment you  are
+     interested in, edit it, and then paste it back in.
+
+     Another useful companion tool is _p_b_m_m_a_s_k.
+
+     The _p_n_m_p_a_s_t_e tool is like this one, except that it doesn't implement  the
+     logical  operation  flags,  since  they don't have any useful meaning for
+     grayscale and color images.
+
+     The flags specify the operation to use when doing the paste.  The default
+     is  ---rrreeeppplllaaaccceee.   The other operations act as if white is 1 and black is 0.
+     WARNING: this is the opposite of how the PBM  file  format  stores  bits.
+     Ignore the file format.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmcut(1), pbmmask(1), pnminvert(1), pnmarith(1), pnmpaste(1), pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               08 August 1989                                1
+
+

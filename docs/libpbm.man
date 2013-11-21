@@ -1,0 +1,198 @@
+
+
+libpbm(3)                  Unix Programmer's Manual                  libpbm(3)
+
+
+NNNAAAMMMEEE
+     libpbm - functions to support portable bitmap programs
+
+SSSYYYNNNOOOPPPSSSIIISSS
+
+     #include <pbm.h>
+     cc ... libpbm.a
+
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN --- PPPAAACCCKKKAAAGGGEEE-WWWIIIDDDEEE RRROOOUUUTTTIIINNNEEESSS
+
+     int pm_keymatch( char* str, char* keyword, int minchars )
+
+     DDDoooeeesss aaa cccaaassseee-iiinnnssseeennnsssiiitttiiivvveee mmmaaatttccchhh ooofff ssstttrrr  against  kkkeeeyyywwwooorrrddd.   ssstttrrr  can  be  a
+     leading sunstring of kkkeeeyyywwwooorrrddd, but at least mmmiiinnnccchhhaaarrrsss must be present.
+
+     int pm_maxvaltobits( int maxval )
+     int pm_bitstomaxval( int bits )
+
+     CCCooonnnvvveeerrrttt bbbeeetttwwweeeeeennn aaa mmmaaaxxxvvvaaalll aaannnddd ttthhheee mmmiiinnniiimmmuuummm nnnuuummmbbbeeerrr ooofff bbbiiitttsss rrreeeqqquuuiiirrreeeddd tttooo  hhhooolllddd
+     iiittt...
+
+     vvvoooiiiddd pppmmm___mmmeeessssssaaagggeee((( ccchhhaaarrr*** fffmmmttt,,, ......... )))
+
+     ppprrriiinnntttfff((())) style routine to write an informational message.
+
+     void pm_error( char* fmt, ... )
+
+     ppprrriiinnntttfff((())) style routine to write an error message and abort.
+
+     void pm_perror( char* reason )
+
+     WWWrrriiittteee ooouuuttt aaa sssyyysssttteeemmm eeerrrrrrooorrr mmmeeessssssaaagggeee aaannnddd aaabbbooorrrttt...
+
+     vvvoooiiiddd pppmmm___uuusssaaagggeee((( ccchhhaaarrr*** uuusssaaagggeee )))
+
+     WWWrrriiittteee aaa uuusssaaagggeee mmmeeessssssaaagggeee...  TTThhheee ssstttrrriiinnnggg ssshhhooouuulllddd iiinnndddiiicccaaattteee wwwhhhaaattt aaarrrggguuummmeeennntttsss aaarrreee  tttooo
+     bbbeee ppprrrooovvviiidddeeeddd tttooo ttthhheee ppprrrooogggrrraaammm...
+
+     FFFIIILLLEEE*** pppmmm___ooopppeeennnrrr((( ccchhhaaarrr*** nnnaaammmeee )))
+
+     OOOpppeeennn ttthhheee gggiiivvveeennn fffiiillleee fffooorrr rrreeeaaadddiiinnnggg,,,  wwwiiittthhh  aaapppppprrroooppprrriiiaaattteee  eeerrrrrrooorrr  ccchhheeeccckkkiiinnnggg...   AAA
+     fffiiillleeennnaaammmeee ooofff """-""" iiisss tttaaakkkeeennn aaasss eeeqqquuuiiivvvaaallleeennnttt tttooo ssstttdddiiinnn...
+
+     FFFIIILLLEEE*** pppmmm___ooopppeeennnwww((( ccchhhaaarrr*** nnnaaammmeee )))
+
+     OOOpppeeennn ttthhheee gggiiivvveeennn fffiiillleee fffooorrr wwwrrriiitttiiinnnggg,,, wwwiiittthhh aaapppppprrroooppprrriiiaaattteee eeerrrrrrooorrr ccchhheeeccckkkiiinnnggg...
+
+     vvvoooiiiddd pppmmm___ccclllooossseee((( FFFIIILLLEEE*** fffppp )))
+
+     CCClllooossseee ttthhheee fffiiillleee dddeeessscccrrriiippptttooorrr,,, wwwiiittthhh aaapppppprrroooppprrriiiaaattteee eeerrrrrrooorrr ccchhheeeccckkkiiinnnggg...
+
+     iiinnnttt pppmmm___rrreeeaaadddbbbiiigggssshhhooorrrttt((( FFFIIILLLEEE*** iiinnn,,, ssshhhooorrrttt*** sssPPP )))
+     iiinnnttt pppmmm___wwwrrriiittteeebbbiiigggssshhhooorrrttt((( FFFIIILLLEEE*** ooouuuttt,,, ssshhhooorrrttt sss )))
+     iiinnnttt pppmmm___rrreeeaaadddbbbiiiggglllooonnnggg((( FFFIIILLLEEE*** iiinnn,,, lllooonnnggg*** lllPPP )))
+     iiinnnttt pppmmm___wwwrrriiittteeebbbiiiggglllooonnnggg((( FFFIIILLLEEE*** ooouuuttt,,, lllooonnnggg lll )))
+
+
+                                                                             1
+
+
+
+
+libpbm(3)                  Unix Programmer's Manual                  libpbm(3)
+
+
+     iiinnnttt pppmmm___rrreeeaaadddllliiittttttllleeessshhhooorrrttt((( FFFIIILLLEEE*** iiinnn,,, ssshhhooorrrttt*** sssPPP )))
+     iiinnnttt pppmmm___wwwrrriiittteeellliiittttttllleeessshhhooorrrttt((( FFFIIILLLEEE*** ooouuuttt,,, ssshhhooorrrttt sss )))
+     iiinnnttt pppmmm___rrreeeaaadddllliiittttttllleeelllooonnnggg((( FFFIIILLLEEE*** iiinnn,,, lllooonnnggg*** lllPPP )))
+     iiinnnttt pppmmm___wwwrrriiittteeellliiittttttllleeelllooonnnggg((( FFFIIILLLEEE*** ooouuuttt,,, lllooonnnggg lll )))
+
+     RRRooouuutttiiinnneeesss tttooo rrreeeaaaddd aaannnddd wwwrrriiittteee ssshhhooorrrttt aaannnddd lllooonnnggg iiinnntttsss iiinnn eeeiiittthhheeerrr bbbiiiggg- ooorrr  llliiittttttllleee---
+     eeennndddiiiaaannn bbbyyyttteee ooorrrdddeeerrr...
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN --- PPPBBBMMM-SSSPPPEEECCCIIIFFFIIICCC RRROOOUUUTTTIIINNNEEESSS
+
+     typedef ... bit;
+     #define PBM_WHITE ...
+     #define PBM_BLACK ...
+
+     eeeaaaccchhh bbbiiittt should contain only the values of PPPBBBMMM___WWWHHHIIITTTEEE or PPPBBBMMM___BBBLLLAAACCCKKK.
+
+     #define PBM_FORMAT ...
+     #define RPBM_FORMAT ...
+     #define PBM_TYPE PBM_FORMAT
+     #define PBM_FORMAT_TYPE(f) ...
+
+     FFFooorrr dddiiissstttiiinnnggguuuiiissshhhiiinnnggg dddiiiffffffeeerrreeennnttt fffiiillleee fffooorrrmmmaaatttsss aaannnddd tttyyypppeeesss...
+
+     vvvoooiiiddd pppbbbmmm___iiinnniiittt((( iiinnnttt*** aaarrrgggcccPPP,,, ccchhhaaarrr*** aaarrrgggvvv[[[]]] )))
+
+     AAAllllll PPPBBBMMM ppprrrooogggrrraaammmsss mmmuuusssttt cccaaallllll ttthhhiiisss rrrooouuutttiiinnneee...
+
+     bbbiiittt****** pppbbbmmm___aaallllllooocccaaarrrrrraaayyy((( iiinnnttt cccooolllsss,,, iiinnnttt rrrooowwwsss )))
+
+     AAAllllllooocccaaattteee aaannn aaarrrrrraaayyy ooofff bbbiiitttsss...
+
+     bbbiiittt*** pppbbbmmm___aaallllllooocccrrrooowww((( iiinnnttt cccooolllsss )))
+
+     AAAllllllooocccaaattteee aaa rrrooowww ooofff ttthhheee gggiiivvveeennn nnnuuummmbbbeeerrr ooofff bbbiiitttsss...
+
+     vvvoooiiiddd pppbbbmmm___fffrrreeeeeeaaarrrrrraaayyy((( bbbiiittt****** bbbiiitttsss,,, iiinnnttt rrrooowwwsss )))
+
+     FFFrrreeeeee ttthhheee aaarrrrrraaayyy  aaallllllooocccaaattteeeddd  wwwiiittthhh  pppbbbmmm___aaallllllooocccaaarrrrrraaayyy((()))  containing  the  given
+     number of rows.
+
+     void pbm_freerow( bit* bitrow )
+
+     FFFrrreeeeee aaa rrrooowww ooofff bbbiiitttsss...
+
+     vvvoooiiiddd pppbbbmmm___rrreeeaaadddpppbbbmmmiiinnniiittt((( FFFIIILLLEEE*** fffppp,,, iiinnnttt*** cccooolllsssPPP,,, iiinnnttt*** rrrooowwwsssPPP,,, iiinnnttt*** fffooorrrmmmaaatttPPP )))
+
+     RRReeeaaaddd ttthhheee hhheeeaaadddeeerrr fffrrrooommm aaa PPPBBBMMM fffiiillleee,,, fffiiilllllliiinnnggg iiinnn ttthhheee  rrrooowwwsss,,,  cccooolllsss  aaannnddd  fffooorrrmmmaaattt
+     vvvaaarrriiiaaabbbllleeesss...
+
+     vvvoooiiiddd pppbbbmmm___rrreeeaaadddpppbbbmmmrrrooowww((( FFFIIILLLEEE*** fffppp,,, bbbiiittt*** bbbiiitttrrrooowww,,, iiinnnttt cccooolllsss,,, iiinnnttt fffooorrrmmmaaattt )))
+
+     RRReeeaaaddd aaa rrrooowww ooofff bbbiiitttsss iiinnntttooo ttthhheee bbbiiitttrrrooowww aaarrrrrraaayyy...  FFFooorrrmmmaaattt aaannnddd cccooolllsss wwweeerrreee fffiiilllllleeeddd iiinnn
+     bbbyyy pppbbbmmm___rrreeeaaadddpppbbbmmmiiinnniiittt((())).
+
+     bit** pbm_readpbm( FILE* fp, int* colsP, int* rowsP )
+
+
+
+                                                                             2
+
+
+
+
+libpbm(3)                  Unix Programmer's Manual                  libpbm(3)
+
+
+     RRReeeaaaddd aaannn eeennntttiiirrreee bbbiiitttmmmaaappp fffiiillleee iiinnntttooo mmmeeemmmooorrryyy,,, rrreeetttuuurrrnnniiinnnggg ttthhheee aaallllllooocccaaattteeeddd aaarrrrrraaayyy aaannnddd
+     fffiiilllllliiinnnggg   iiinnn  ttthhheee  rrrooowwwsss  aaannnddd  cccooolllsss  vvvaaarrriiiaaabbbllleeesss...   TTThhhiiisss  fffuuunnnccctttiiiooonnn  cccooommmbbbiiinnneeesss
+     pppbbbmmm___rrreeeaaadddpppbbbmmmiiinnniiittt((())), pppbbbmmm___aaallllllooocccaaarrrrrraaayyy((())) and pppbbbmmm___rrreeeaaadddpppbbbmmmrrrooowww((())).
+
+     void pbm_writepbminit( FILE* fp, int cols, int rows, int forceplain )
+
+     WWWrrriiittteee ttthhheee hhheeeaaadddeeerrr fffooorrr aaa pppooorrrtttaaabbbllleee bbbiiitttmmmaaappp fffiiillleee...  TTThhheee fffooorrrccceeeppplllaaaiiinnn ffflllaaaggg  fffooorrrccceeesss
+     aaa ppplllaaaiiinnn-fffooorrrmmmaaattt fffiiillleee tttooo bbbeee wwwrrriiitttttteeennn,,, aaasss oooppppppooossseeeddd tttooo aaa rrraaawww-fffooorrrmmmaaattt ooonnneee...
+
+     vvvoooiiiddd pppbbbmmm___wwwrrriiittteeepppbbbmmmrrrooowww((( FFFIIILLLEEE*** fffppp,,, bbbiiittt*** bbbiiitttrrrooowww,,, iiinnnttt cccooolllsss,,, iiinnnttt fffooorrrccceeeppplllaaaiiinnn )))
+
+     WWWrrriiittteee aaa rrrooowww fffrrrooommm aaa pppooorrrtttaaabbbllleee bbbiiitttmmmaaappp...
+
+     vvvoooiiiddd pppbbbmmm___wwwrrriiittteeepppbbbmmm(((  FFFIIILLLEEE***  fffppp,,,  bbbiiittt******  bbbiiitttsss,,,  iiinnnttt  cccooolllsss,,,  iiinnnttt  rrrooowwwsss,,,  iiinnnttt
+     fffooorrrccceeeppplllaaaiiinnn )))
+
+     WWWrrriiittteee ttthhheee hhheeeaaadddeeerrr aaannnddd aaallllll dddaaatttaaa  fffooorrr  aaa  pppooorrrtttaaabbbllleee  bbbiiitttmmmaaappp...   TTThhhiiisss  fffuuunnnccctttiiiooonnn
+     cccooommmbbbiiinnneeesss pppbbbmmm___wwwrrriiittteeepppbbbmmmiiinnniiittt((())) and pppbbbmmm___wwwrrriiittteeepppbbbmmmrrrooowww((())).
+
+SSSEEEEEE AAALLLSSSOOO
+     libpgm(3), libppm(3), libpnm(3)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Tony Hansen and Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                             3
+
+

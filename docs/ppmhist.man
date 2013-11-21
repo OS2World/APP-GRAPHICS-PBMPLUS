@@ -1,0 +1,66 @@
+
+
+ppmhist(1)                 Unix Programmer's Manual                 ppmhist(1)
+
+
+NNNAAAMMMEEE
+     ppmhist - print a histogram of a portable pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     ppppppmmmhhhiiisssttt [_p_p_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable pixmap as input.  Generates a histogram of the colors in
+     the pixmap.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppm(5), pgmhist(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                03 April 1989                                1
+
+

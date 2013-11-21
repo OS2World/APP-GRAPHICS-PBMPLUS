@@ -1,0 +1,66 @@
+
+
+tgatoppm(1)                Unix Programmer's Manual                tgatoppm(1)
+
+
+NNNAAAMMMEEE
+     tgatoppm - convert TrueVision Targa file into a portable pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     tttgggaaatttoooppppppmmm [-dddeeebbbuuuggg] [_t_g_a_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a TrueVision Targa file as input.  Produces a  portable  pixmap  as
+     output.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---dddeeebbbuuuggg
+          Causes the header information to be dumped to stderr.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Partially based on tga2rast, version 1.0, by Ian J. MacPhedran.
+
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               26 August 1989                                1
+
+

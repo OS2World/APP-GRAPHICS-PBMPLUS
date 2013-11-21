@@ -1,0 +1,66 @@
+
+
+ppmtopi1(1)                Unix Programmer's Manual                ppmtopi1(1)
+
+
+NNNAAAMMMEEE
+     ppmtopi1 - convert a portable pixmap into an Atari Degas .pi1 file
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     ppppppmmmtttooopppiii111 [_p_p_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable pixmap as input.  Produces an Atari Degas .pi1  file  as
+     output.
+
+SSSEEEEEE AAALLLSSSOOO
+     pi1toppm(1), ppm(5), pbmtopi3(1), pi3topbm(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Steve Belczyk (seb3@gte.com) and Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                19 July 1990                                 1
+
+

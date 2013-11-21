@@ -1,0 +1,66 @@
+
+
+pnmsmooth(1)               Unix Programmer's Manual               pnmsmooth(1)
+
+
+NNNAAAMMMEEE
+     pnmsmooth - smooth out an image
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmsssmmmoooooottthhh [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Smooths out an image by replacing each pixel with the average of its nine
+     immediate  neighbors.   It  is  implemented  as  a  simple  script  using
+     _p_n_m_c_o_n_v_o_l.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmconvol(1), pnm(5)
+
+BBBUUUGGGSSS
+     It's a script.  Scripts are not portable to non-Unix environments.
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               13 January 1991                               1
+
+

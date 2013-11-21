@@ -1,0 +1,66 @@
+
+
+rawtoppm(1)                Unix Programmer's Manual                rawtoppm(1)
+
+
+NNNAAAMMMEEE
+     rawtoppm - convert raw RGB bytes into a portable pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     rrraaawwwtttoooppppppmmm  [-hhheeeaaadddeeerrrssskkkiiippp   _N]   [-rrrooowwwssskkkiiippp   _N]   [-rrrgggbbb|-rrrbbbggg|-gggrrrbbb|-gggbbbrrr|   [---
+     iiinnnttteeerrrpppiiixxxeeelll|-iiinnnttteeerrrrrrooowww] _w_i_d_t_h _h_e_i_g_h_t [_i_m_a_g_e_d_a_t_a]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads raw RGB bytes as input.  Produces a portable pixmap as output.  The
+     input  file  is just RGB bytes.  You have to specify the width and height
+     on the command line, since the program obviously can't get them from  the
+     file.  The maxval is assumed to be 255.  If the resulting image is upside
+     down, run it through pppnnnmmmfffllliiippp ---tttbbb ...
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---hhheeeaaadddeeerrrssskkkiiippp
+          If the file has a header, you can use this flag to skip over it.
+
+     ---rrrooowwwssskkkiiippp
+          If there is padding at the ends of the rows, you can  skip  it  with
+          this flag.
+
+     ---rrrgggbbb ---rrrbbbggg ---gggrrrbbb ---gggbbbrrr ---bbbrrrggg ---bbbgggrrr
+          These flags let you specify alternate color orders.  The default  is
+          ---rrrgggbbb.
+
+     ---iiinnnttteeerrrpppiiixxxeeelll ---iiinnnttteeerrrrrrooowww
+          These flags let you specify how the  colors  are  interleaved.   The
+          default is ---iiinnnttteeerrrpppiiixxxeeelll, meaning three interleaved bytes make up each
+          pixel.  ---iiinnnttteeerrrrrrooowww means three interleaved rows - a row of red, a row
+          of  green,  a  row  of blue, assuming standard rgb color order.  The
+          ---iiinnnttteeerrrppplllaaannneee flag is an obvious extension, but is not implemented.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppm(5), rawtopgm(1), pnmflip(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               15 December 89                                1
+
+

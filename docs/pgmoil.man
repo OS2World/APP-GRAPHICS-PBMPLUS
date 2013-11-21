@@ -1,0 +1,66 @@
+
+
+pgmoil(1)                  Unix Programmer's Manual                  pgmoil(1)
+
+
+NNNAAAMMMEEE
+     pgmoil - turn a portable graymap into an oil painting
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppgggmmmoooiiilll [-nnn _N] [_p_g_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable graymap as input.  Does an "oil transfer", and writes  a
+     portable graymap as output.
+
+     The oil transfer  is  described  in  "Beyond  Photography"  by  Holzmann,
+     chapter 4, photo 7.  It's a sort of localized smearing.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     The optional ---nnn flag controls the size of the area smeared.  The  default
+     value is 3.
+
+BBBUUUGGGSSS
+     Takes a long time to run.
+
+SSSEEEEEE AAALLLSSSOOO
+     pgmbentley(1), ppmrelief(1), pgm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1990 by Wilson Bent (whb@hoh-2.att.com)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               11 January 1991                               1
+
+

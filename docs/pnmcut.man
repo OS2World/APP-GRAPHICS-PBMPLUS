@@ -1,0 +1,66 @@
+
+
+pnmcut(1)                  Unix Programmer's Manual                  pnmcut(1)
+
+
+NNNAAAMMMEEE
+     pnmcut - cut a rectangle out of a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmcccuuuttt _x _y _w_i_d_t_h _h_e_i_g_h_t [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable anymap as input.  Extracts the specified rectangle,  and
+     produces  a  portable  anymap as output.  The _x and _y can be negative, in
+     which case they are interpreted relative to the right and bottom  of  the
+     anymap, respectively.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              21 February 1989                               1
+
+

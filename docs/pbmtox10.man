@@ -1,0 +1,66 @@
+
+
+pbmtox10bm(1)              Unix Programmer's Manual              pbmtox10bm(1)
+
+
+NNNAAAMMMEEE
+     pbmtox10bm - convert a portable bitmap into an X10 bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmtttoooxxx111000bbbmmm [_p_b_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable bitmap as input.  Produces  an  X10  bitmap  as  output.
+     This older format is maintained for compatibility.
+
+     Note that there is no x10bmtopbm tool, because _x_b_m_t_o_p_b_m can read both X11
+     and X10 bitmaps.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbmtoxbm(1), xbmtopbm(1), pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1988 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               31 August 1988                                1
+
+

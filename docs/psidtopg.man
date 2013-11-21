@@ -1,0 +1,66 @@
+
+
+psidtopgm(1)               Unix Programmer's Manual               psidtopgm(1)
+
+
+NNNAAAMMMEEE
+     psidtopgm - convert PostScript "image" data into a portable graymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppsssiiidddtttooopppgggmmm _w_i_d_t_h _h_e_i_g_h_t _b_i_t_s/_s_a_m_p_l_e [_i_m_a_g_e_d_a_t_a]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads the "image" data from a  PostScript  file  as  input.   Produces  a
+     portable graymap as output.
+
+     This is a very simple and limited program, and is here  only  because  so
+     many  people  have  asked for it.  To use it you have to mmmaaannnuuuaaallllllyyy extract
+     the readhexstring data portion from your PostScript file, and  then  give
+     the  width,  height,  and  bits/sample  on  the command line.  Before you
+     attempt this, you should aaattt llleeeaaasssttt read the  description  of  the  "image"
+     operator in the PostScript Language Reference Manual.
+
+     It would probably not be too hard to write a script that uses this filter
+     to  read a specific variety of PostScript image, but the variation is too
+     great to make a general-purpose reader.  Unless, of course, you  want  to
+     write a full-fledged PostScript interpreter...
+
+SSSEEEEEE AAALLLSSSOOO
+     pgmtops(1), pgm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                02 August 89                                 1
+
+

@@ -1,0 +1,66 @@
+
+
+fitstopgm(1)               Unix Programmer's Manual               fitstopgm(1)
+
+
+NNNAAAMMMEEE
+     fitstopgm - convert a FITS file into a portable graymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     fffiiitttssstttooopppgggmmm [-iiimmmaaagggeee _N] [_F_I_T_S_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a FITS file as input.  Produces a portable graymap as output.   The
+     results  may  need  to  be  flipped  top for bottom; if so, just pipe the
+     output through pppnnnmmmfffllliiippp ---tttbbb...
+
+OOOPPPTTTIIIOOONNNSSS
+
+     The ---iiimmmaaagggeee option is for FITS files with three axes.  The  assumption  is
+     that  the  third  axis  is  for multiple images, and this option lets you
+     select which one you want.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+RRREEEFFFEEERRREEENNNCCCEEESSS
+     FITS stands for Flexible Image Transport System.  A full description  can
+     be  found  in  Astronomy & Astrophysics Supplement Series 44 (1981), page
+     363.
+
+SSSEEEEEE AAALLLSSSOOO
+     pgmtofits(1), pgm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               20 September 89                               1
+
+

@@ -1,0 +1,66 @@
+
+
+pbmmake(1)                 Unix Programmer's Manual                 pbmmake(1)
+
+
+NNNAAAMMMEEE
+     pbmmake - create a blank bitmap of a specified size
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmmmmaaakkkeee [-wwwhhhiiittteee|-bbblllaaaccckkk|-gggrrraaayyy] _w_i_d_t_h _h_e_i_g_h_t
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Produces a portable bitmap of the specified width and height.  The  color
+     defaults to white.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     In addition to the usual  ---wwwhhhiiittteee  and  ---bbblllaaaccckkk,  this  program  implements
+     ---gggrrraaayyy.    This  gives  a  simple  50%  gray  pattern  with  1's  and  0's
+     alternating.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbm(5), ppmmake(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              22 February 1989                               1
+
+

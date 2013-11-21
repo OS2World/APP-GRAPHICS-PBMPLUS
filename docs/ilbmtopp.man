@@ -1,0 +1,66 @@
+
+
+ilbmtoppm(1)               Unix Programmer's Manual               ilbmtoppm(1)
+
+
+NNNAAAMMMEEE
+     ilbmtoppm - convert IFF ILBM file into a portable pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     iiilllbbbmmmtttoooppppppmmm [_i_l_b_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads an IFF ILBM file as input.  Produces a portable pixmap  as  output.
+     Handles the Amiga's HAM and EXTRA_HALFBRIGHT modes.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                30 March 1989                                1
+
+

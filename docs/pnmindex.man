@@ -1,0 +1,66 @@
+
+
+pnmindex(1)                Unix Programmer's Manual                pnmindex(1)
+
+
+NNNAAAMMMEEE
+     pnmindex - build a visual index of a bunch of anymaps
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmiiinnndddeeexxx [-sssiiizzzeee _N] [-aaacccrrrooossssss _N] [-cccooolllooorrrsss _N] [-bbblllaaaccckkk] _p_n_m_f_i_l_e ...
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     This script makes small versions of a bunch of anymaps, adds labels,  and
+     concatenates them together into a collage.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---sssiiizzzeee
+          Controls how big each image becomes; the default is 100x100.
+
+     ---aaacccrrrooossssss
+          Controls how many images are in each row; the default is 6.
+
+     ---cccooolllooorrrsss
+          Controls how many colors the  final  index  gets  quantized  to,  if
+          quantization is necessary; the default is 256.
+
+     ---bbblllaaaccckkk
+          Controls the color of the padding between the images; normally  it's
+          white  and  the  labels are black lettering on white background, but
+          the ---bbblllaaaccckkk flag reverses this.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmscale(1), pnmcat(1), pbmtext(1), ppmquant(1), pnm(5)
+
+BBBUUUGGGSSS
+     It's very slow.
+
+     It's a csh script.  Csh scripts are not portable to System V.  Scripts in
+     general are not portable to non-Unix environments.
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               9 January 1991                                1
+
+

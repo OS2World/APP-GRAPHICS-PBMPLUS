@@ -1,0 +1,66 @@
+
+
+pnm(5)                     Unix Programmer's Manual                     pnm(5)
+
+
+NNNAAAMMMEEE
+     pnm - portable anymap file format
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     The _p_n_m programs operate on  portable  bitmaps,  graymaps,  and  pixmaps,
+     produced  by  the  _p_b_m,  _p_g_m,  and _p_p_m segments.  There is no file format
+     associated with _p_n_m itself.
+
+SSSEEEEEE AAALLLSSSOOO
+     anytopnm(1),  rasttopnm(1),  tifftopnm(1),   xwdtopnm(1),   pnmtorast(1),
+     pnmtotiff(1),    pnmtoxwd(1),   pnmarith(1),   pnmcat(1),   pnmconvol(1),
+     pnmcrop(1),   pnmcut(1),    pnmdepth(1),    pnmenlarge(1),    pnmfile(1),
+     pnmflip(1),   pnmgamma(1),   pnmindex(1),   pnminvert(1),   pnmmargin(1),
+     pnmnoraw(1),   pnmpaste(1),   pnmrotate(1),   pnmscale(1),   pnmshear(1),
+     pnmsmooth(1), pnmtile(1), ppm(5), pgm(5), pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               9 January 1991                                1
+
+

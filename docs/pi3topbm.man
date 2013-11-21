@@ -1,0 +1,66 @@
+
+
+pi3topbm(1)                Unix Programmer's Manual                pi3topbm(1)
+
+
+NNNAAAMMMEEE
+     pi3topbm - convert an Atari Degas .pi3 file into a portable bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppiii333tttooopppbbbmmm [_p_i_3_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads an Atari Degas .pi3 file as input.  Produces a portable  bitmap  as
+     output.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbmtopi3(1), pbm(5), pi1toppm(1), ppmtopi1(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1988  by  David  Beckemeyer  (bdt!david)  and  Diomidis  D.
+     Spinellis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                11 March 1990                                1
+
+

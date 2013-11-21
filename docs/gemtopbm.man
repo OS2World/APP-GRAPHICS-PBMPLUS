@@ -1,0 +1,66 @@
+
+
+gemtopbm(1)                Unix Programmer's Manual                gemtopbm(1)
+
+
+NNNAAAMMMEEE
+     gemtopbm - convert a GEM .img file into a portable bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     gggeeemmmtttooopppbbbmmm [-ddd] _g_e_m_f_i_l_e
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a GEM .img file as input.  Produces a portable bitmap as output.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---ddd   Produce output describing the contents of the .img file.
+
+BBBUUUGGGSSS
+     Does not support file containing more than one plane.   Can't  read  from
+     standard input.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbmtogem(1), pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1988 Diomidis D. Spinellis (dds@cc.ic.ac.uk).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               3 December 1988                               1
+
+

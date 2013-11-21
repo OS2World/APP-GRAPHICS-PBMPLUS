@@ -1,0 +1,66 @@
+
+
+pnmflip(1)                 Unix Programmer's Manual                 pnmflip(1)
+
+
+NNNAAAMMMEEE
+     pnmflip - perform one or more flip operations on a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmfffllliiippp [-llleeeffftttrrriiiggghhhttt|-lllrrr] [-tttooopppbbbooottttttooommm|-tttbbb]  [-tttrrraaannnssspppooossseee|-xxxyyy]  [-rrroootttaaattteee999000|---
+     rrr999000|-ccccccwww] [-rrroootttaaattteee222777000|-rrr222777000|-cccwww] [-rrroootttaaattteee111888000|-rrr111888000] [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable anymap as input.  Performs one or more flip  operations,
+     in the order specified, and writes out a portable anymap.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     The flip operations available are: left for right  (-llleeeffftttrrriiiggghhhttt  or  ---lllrrr);
+     top  for  bottom  (-tttooopppbbbooottttttooommm  or  ---tttbbb); and transposition (-tttrrraaannnssspppooossseee or
+     ---xxxyyy).  In addition, some canned concatenations are available:   ---rrroootttaaattteee999000
+     or  ---ccccccwww  is  equivalent  to  ---tttrrraaannnssspppooossseee ---tttooopppbbbooottttttooommm; ---rrroootttaaattteee222777000 or ---cccwww is
+     equivalent to ---tttrrraaannnssspppooossseee ---llleeeffftttrrriiiggghhhttt;  and  ---rrroootttaaattteee111888000  is  equivalent  to
+     ---llleeeffftttrrriiiggghhhttt ---tttooopppbbbooottttttooommm.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmrotate(1), pnm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                25 July 1989                                 1
+
+

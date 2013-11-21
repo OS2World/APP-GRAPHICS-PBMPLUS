@@ -1,0 +1,198 @@
+
+
+libppm(3)                  Unix Programmer's Manual                  libppm(3)
+
+
+NNNAAAMMMEEE
+     libppm - functions to support portable pixmap programs
+
+SSSYYYNNNOOOPPPSSSIIISSS
+
+     #include <ppm.h>
+     cc ... libppm.a libpgm.a libpbm.a
+
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+
+     typedef ... pixel;
+     typedef ... pixval;
+     #define PPM_MAXMAXVAL ...
+     extern pixval ppm_pbmmaxval;
+
+     EEEaaaccchhh pppiiixxxeeelll contains three pppiiixxxvvvaaallls, each of which should contain only  the
+     values  between  000  and  PPPPPPMMM___MMMAAAXXXMMMAAAXXXVVVAAALLL.  ppppppmmm___pppbbbmmmmmmaaaxxxvvvaaalll is the maxval used
+     when a PPM program reads a PBM file.  Normally it is 1; however, for some
+     programs, a larger value gives better results.
+
+     #define PPM_FORMAT ...
+     #define RPPM_FORMAT ...
+     #define PPM_TYPE PPM_FORMAT
+     int PPM_FORMAT_TYPE( int format )
+
+     FFFooorrr dddiiissstttiiinnnggguuuiiissshhhiiinnnggg dddiiiffffffeeerrreeennnttt fffiiillleee fffooorrrmmmaaatttsss aaannnddd tttyyypppeeesss...
+
+     pppiiixxxvvvaaalll PPPPPPMMM___GGGEEETTTRRR((( pppiiixxxeeelll ppp )))
+     pppiiixxxvvvaaalll PPPPPPMMM___GGGEEETTTGGG((( pppiiixxxeeelll ppp )))
+     pppiiixxxvvvaaalll PPPPPPMMM___GGGEEETTTBBB((( pppiiixxxeeelll ppp )))
+
+     TTThhheeessseee ttthhhrrreeeeee mmmaaacccrrrooosss rrreeetttrrriiieeevvveee ttthhheee rrreeeddd,,, gggrrreeeeeennn ooorrr bbbllluuueee vvvaaallluuueee fffrrrooommm  ttthhheee  gggiiivvveeennn
+     pppiiixxxeeelll...
+
+     vvvoooiiiddd PPPPPPMMM___AAASSSSSSIIIGGGNNN((( pppiiixxxeeelll ppp,,, pppiiixxxvvvaaalll rrreeeddd,,, pppiiixxxvvvaaalll gggrrrnnn,,, pppiiixxxvvvaaalll bbbllluuu )))
+
+     TTThhhiiisss mmmaaacccrrrooo aaassssssiiigggnnnsss ttthhheee gggiiivvveeennn rrreeeddd,,, gggrrreeeeeennn aaannnddd bbbllluuueee vvvaaallluuueeesss tttooo ttthhheee pppiiixxxeeelll...
+
+     iiinnnttt PPPPPPMMM___EEEQQQUUUAAALLL((( pppiiixxxeeelll ppp,,, pppiiixxxeeelll qqq )))
+
+     TTThhhiiisss mmmaaacccrrrooo ccchhheeeccckkksss tttwwwooo pppiiixxxeeelllsss fffooorrr eeeqqquuuaaallliiitttyyy...
+
+     vvvoooiiiddd PPPPPPMMM___DDDEEEPPPTTTHHH((( pppiiixxxeeelll nnneeewwwppp,,, pppiiixxxeeelll ppp,,, pppiiixxxvvvaaalll ooollldddmmmaaaxxxvvvaaalll,,, pppiiixxxvvvaaalll nnneeewwwmmmaaaxxxvvvaaalll )))
+
+     TTThhhiiisss mmmaaacccrrrooo ssscccaaallleeesss ttthhheee cccooolllooorrrsss ooofff pppiiixxxeeelll ppp according the old and new maximum
+     values  and  assigns  the  new  values  to  nnneeewwwppp.  It is intended to make
+     writing ppmtowhatever easier.
+
+     float PPM_LUMIN( pixel p )
+
+     TTThhhiiisss mmmaaacccrrrooo dddeeettteeerrrmmmiiinnneeesss ttthhheee llluuummmiiinnnaaannnccceee ooofff ttthhheee pppiiixxxeeelll ppp.
+
+     pixel** ppm_allocarray( int cols, int rows )
+
+     AAAllllllooocccaaattteee aaannn aaarrrrrraaayyy ooofff pppiiixxxeeelllsss...
+
+
+                                                                             1
+
+
+
+
+libppm(3)                  Unix Programmer's Manual                  libppm(3)
+
+
+     pppiiixxxeeelll*** ppppppmmm___aaallllllooocccrrrooowww((( iiinnnttt cccooolllsss )))
+
+     AAAllllllooocccaaattteee aaa rrrooowww ooofff ttthhheee gggiiivvveeennn nnnuuummmbbbeeerrr ooofff pppiiixxxeeelllsss...
+
+     vvvoooiiiddd ppppppmmm___fffrrreeeeeeaaarrrrrraaayyy((( pppiiixxxeeelll****** pppiiixxxeeelllsss,,, iiinnnttt rrrooowwwsss )))
+
+     FFFrrreeeeee ttthhheee aaarrrrrraaayyy  aaallllllooocccaaattteeeddd  wwwiiittthhh  ppppppmmm___aaallllllooocccaaarrrrrraaayyy((()))  containing  the  given
+     number of rows.
+
+     void pbm_freerow( pixel* pixelrow )
+
+     FFFrrreeeeee aaa rrrooowww ooofff pppiiixxxeeelllsss...
+
+     vvvoooiiiddd ppppppmmm___rrreeeaaadddppppppmmmiiinnniiittt((( FFFIIILLLEEE*** fffppp,,, iiinnnttt*** cccooolllsssPPP,,, iiinnnttt*** rrrooowwwsssPPP,,, pppiiixxxvvvaaalll***  mmmaaaxxxvvvaaalllPPP,,,
+     iiinnnttt*** fffooorrrmmmaaatttPPP )))
+
+     RRReeeaaaddd ttthhheee hhheeeaaadddeeerrr fffrrrooommm aaa PPPPPPMMM fffiiillleee,,, fffiiilllllliiinnnggg iiinnn ttthhheee rrrooowwwsss,,,  cccooolllsss,,,  mmmaaaxxxvvvaaalll  aaannnddd
+     fffooorrrmmmaaattt vvvaaarrriiiaaabbbllleeesss...
+
+     vvvoooiiiddd ppppppmmm___rrreeeaaadddppppppmmmrrrooowww((( FFFIIILLLEEE*** fffppp,,, pppiiixxxeeelll*** pppiiixxxeeelllrrrooowww,,, iiinnnttt cccooolllsss,,, pppiiixxxvvvaaalll  mmmaaaxxxvvvaaalll,,,
+     iiinnnttt fffooorrrmmmaaattt )))
+
+     RRReeeaaaddd aaa rrrooowww ooofff pppiiixxxeeelllsss iiinnntttooo ttthhheee pppiiixxxeeelllrrrooowww aaarrrrrraaayyy...  FFFooorrrmmmaaattt,,, cccooolllsss,,,  aaannnddd  mmmaaaxxxvvvaaalll
+     wwweeerrreee fffiiilllllleeeddd iiinnn bbbyyy ppppppmmm___rrreeeaaadddppppppmmmiiinnniiittt((())).
+
+     pixel** ppm_readppm( FILE* fp, int* colsP, int* rowsP, pixval* maxvalP )
+
+     RRReeeaaaddd aaannn eeennntttiiirrreee pppiiixxxmmmaaappp fffiiillleee iiinnntttooo mmmeeemmmooorrryyy,,, rrreeetttuuurrrnnniiinnnggg ttthhheee aaallllllooocccaaattteeeddd aaarrrrrraaayyy aaannnddd
+     fffiiilllllliiinnnggg  iiinnn  ttthhheee rrrooowwwsss,,, cccooolllsss aaannnddd mmmaaaxxxvvvaaalll vvvaaarrriiiaaabbbllleeesss...  TTThhhiiisss fffuuunnnccctttiiiooonnn cccooommmbbbiiinnneeesss
+     ppppppmmm___rrreeeaaadddppppppmmmiiinnniiittt((())), ppppppmmm___aaallllllooocccaaarrrrrraaayyy((())) and ppppppmmm___rrreeeaaadddppppppmmmrrrooowww((())).
+
+     void ppm_writeppminit( FILE* fp, int cols, int rows, pixval  maxval,  int
+     forceplain )
+
+     WWWrrriiittteee ttthhheee hhheeeaaadddeeerrr fffooorrr aaa pppooorrrtttaaabbbllleee pppiiixxxmmmaaappp fffiiillleee...  TTThhheee fffooorrrccceeeppplllaaaiiinnn ffflllaaaggg  fffooorrrccceeesss
+     aaa ppplllaaaiiinnn-fffooorrrmmmaaattt fffiiillleee tttooo bbbeee wwwrrriiitttttteeennn,,, aaasss oooppppppooossseeeddd tttooo aaa rrraaawww-fffooorrrmmmaaattt ooonnneee...
+
+     vvvoooiiiddd ppppppmmm___wwwrrriiittteeeppppppmmmrrrooowww((( FFFIIILLLEEE*** fffppp,,, pppiiixxxeeelll*** pppiiixxxeeelllrrrooowww,,, iiinnnttt cccooolllsss,,, pppiiixxxvvvaaalll mmmaaaxxxvvvaaalll,,,
+     iiinnnttt fffooorrrccceeeppplllaaaiiinnn )))
+
+     WWWrrriiittteee aaa rrrooowww fffrrrooommm aaa pppooorrrtttaaabbbllleee pppiiixxxmmmaaappp...
+
+     vvvoooiiiddd ppppppmmm___wwwrrriiittteeeppppppmmm((( FFFIIILLLEEE*** fffppp,,, pppiiixxxeeelll****** pppiiixxxeeelllsss,,, iiinnnttt cccooolllsss,,, iiinnnttt  rrrooowwwsss,,,  pppiiixxxvvvaaalll
+     mmmaaaxxxvvvaaalll,,, iiinnnttt fffooorrrccceeeppplllaaaiiinnn )))
+
+     WWWrrriiittteee ttthhheee hhheeeaaadddeeerrr aaannnddd aaallllll dddaaatttaaa  fffooorrr  aaa  pppooorrrtttaaabbbllleee  pppiiixxxmmmaaappp...   TTThhhiiisss  fffuuunnnccctttiiiooonnn
+     cccooommmbbbiiinnneeesss ppppppmmm___wwwrrriiittteeeppppppmmmiiinnniiittt((())) and ppppppmmm___wwwrrriiittteeeppppppmmmrrrooowww((())).
+
+     pixel ppm_parsecolor( char* colorname, pixval maxval )
+
+     PPPaaarrrssseeesss aaannn AAASSSCCCIIIIII cccooolllooorrr nnnaaammmeee iiinnntttooo aaa pppiiixxxeeelll...  TTThhheee cccooolllooorrr cccaaannn bbbeee  ssspppeeeccciiifffiiieeeddd  iiinnn
+     ttthhhrrreeeeee  wwwaaayyysss...   OOOnnneee,,,  aaasss  aaa  nnnaaammmeee,,, aaassssssuuummmiiinnnggg ttthhhaaattt aaa pppoooiiinnnttteeerrr tttooo aaannn XXX111111-ssstttyyyllleee
+     cccooolllooorrr nnnaaammmeeesss fffiiillleee wwwaaasss cccooommmpppiiillleeeddd  iiinnn...   TTTwwwooo,,,  aaasss  aaannn  XXX111111-ssstttyyyllleee  hhheeexxxiiidddeeeccciiimmmaaalll
+     nnnuuummmbbbeeerrr::: ###rrrgggbbb,,, ###rrrrrrggggggbbbbbb,,, ###rrrrrrrrrgggggggggbbbbbbbbb,,, ooorrr ###rrrrrrrrrrrrggggggggggggbbbbbbbbbbbb...  TTThhhrrreeeeee,,, aaasss aaa tttrrriiipppllleeettt
+     ooofff dddeeeccciiimmmaaalll fffllloooaaatttiiinnnggg pppoooiiinnnttt nnnuuummmbbbeeerrrsss ssseeepppaaarrraaattteeeddd bbbyyy cccooommmmmmaaasss::: rrr...rrr,,,ggg...ggg,,,bbb...bbb...
+
+
+
+                                                                             2
+
+
+
+
+libppm(3)                  Unix Programmer's Manual                  libppm(3)
+
+
+     ccchhhaaarrr*** ppppppmmm___cccooolllooorrrnnnaaammmeee((( pppiiixxxeeelll*** cccooolllooorrrPPP,,, pppiiixxxvvvaaalll mmmaaaxxxvvvaaalll,,, iiinnnttt hhheeexxxoookkk )))
+
+     RRReeetttuuurrrnnnsss aaa pppoooiiinnnttteeerrr tttooo aaa ssstttrrriiinnnggg dddeeessscccrrriiibbbiiinnnggg ttthhheee gggiiivvveeennn  cccooolllooorrr...   IIIfff  ttthhheee  XXX111111
+     cccooolllooorrr  nnnaaammmeeesss  fffiiillleee iiisss aaavvvaaaiiilllaaabbbllleee aaannnddd ttthhheee cccooolllooorrr aaappppppeeeaaarrrsss iiinnn iiittt,,, ttthhhaaattt nnnaaammmeee iiisss
+     rrreeetttuuurrrnnneeeddd...  OOOttthhheeerrrwwwiiissseee,,, iiifff ttthhheee  hhheeexxxoookkk  ffflllaaaggg  iiisss  tttrrruuueee  ttthhheeennn  aaa  hhheeexxxiiidddeeeccciiimmmaaalll
+     cccooolllooorrrssspppeeeccc  iiisss rrreeetttuuurrrnnneeeddd;;; iiifff hhheeexxxoookkk iiisss fffaaalllssseee aaannnddd ttthhheee XXX111111 cccooolllooorrr nnnaaammmeeesss fffiiillleee iiisss
+     aaavvvaaaiiilllaaabbbllleee,,, ttthhheeennn ttthhheee ccclllooossseeesssttt mmmaaatttccchhhiiinnnggg cccooolllooorrr iiisss rrreeetttuuurrrnnneeeddd;;;  ooottthhheeerrrwwwiiissseee,,,  iiittt'''sss
+     aaannn eeerrrrrrooorrr...
+
+SSSEEEEEE AAALLLSSSOOO
+     pbm(3), pgm(3)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Tony Hansen and Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                             3
+
+

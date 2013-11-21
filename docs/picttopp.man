@@ -1,0 +1,66 @@
+
+
+picttoppm(1)               Unix Programmer's Manual               picttoppm(1)
+
+
+NNNAAAMMMEEE
+     picttoppm - convert a MacIntosh PICT file into a portable pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppiiicccttttttoooppppppmmm [-vvveeerrrbbbooossseee] [_p_i_c_t_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a PICT file (version 1 or 2) and outputs a portable pixmap.  Useful
+     as  the first step in converting a scanned image to something that can be
+     displayed on Unix.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---vvv   Turns on verbose mode which prints a a whole  bunch  of  information
+          that only _p_i_c_t_t_o_p_p_m hackers really care about.
+
+BBBUUUGGGSSS
+     The PICT file  format  is  a  general  drawing  format.   _p_i_c_t_t_o_p_p_m  only
+     supports  a  small  subset of its operations but is still very useful for
+     files produced by scanning software.  In  particular,  text  added  to  a
+     scanned image will be silently ignored.
+
+SSSEEEEEE AAALLLSSSOOO
+     Inside MacIntosh volume 5, ppmtopict(1), ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright 1989 George Phillips
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               16 January 1990                               1
+
+

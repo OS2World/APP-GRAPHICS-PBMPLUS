@@ -1,0 +1,66 @@
+
+
+pgmtops(1)                 Unix Programmer's Manual                 pgmtops(1)
+
+
+NNNAAAMMMEEE
+     pgmtops - convert portable graymap to Encapsulated PostScript
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppgggmmmtttooopppsss [-rrrllleee|-rrruuunnnllleeennngggttthhh] [-ssscccaaallleee _s] [_p_g_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable graymap as input.  Produces Encapsulated  PostScript  as
+     output.
+
+     Note that there is no pstopgm tool  -  this  transformation  is  one-way,
+     because  a  pstopgm  tool would be a full-fledged PostScript interpreter,
+     which is beyond the scope of this package.  However,  see  the  _p_s_i_d_t_o_p_g_m
+     tool.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     The ---ssscccaaallleee flag controls the scale of the result.  The default  scale  is
+     1,  which  on  a  300 dpi printer such as the Apple LaserWriter makes the
+     output look about the same size as the input would if it was displayed on
+     a typical 72 dpi screen.
+
+     The ---rrrllleee or ---rrruuunnnllleeennngggttthhh flag specifies run-length compression.   This  may
+     save time if the host-to-printer link is slow; but normally the printer's
+     processing time dominates, so ---rrrllleee makes things slower.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     psidtopgm(1), pgm(5), ppmtops(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                04 March 1989                                1
+
+

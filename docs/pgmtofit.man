@@ -1,0 +1,66 @@
+
+
+pgmtofits(1)               Unix Programmer's Manual               pgmtofits(1)
+
+
+NNNAAAMMMEEE
+     pgmtofits - convert a portable graymap into FITS format
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppgggmmmtttooofffiiitttsss [_p_g_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable graymap as input.  Produces a FITS file as output.
+
+     FITS stands for Flexible Image Transport System.  A full description  can
+     be  found  in  Astronomy & Astrophysics Supplement Series 44 (1981), page
+     363.
+
+SSSEEEEEE AAALLLSSSOOO
+     fitstopgm(1), pgm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Wilson H. Bent (whb@hoh-2.att.com).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              20 September 1989                              1
+
+

@@ -1,0 +1,66 @@
+
+
+hipstopgm(1)               Unix Programmer's Manual               hipstopgm(1)
+
+
+NNNAAAMMMEEE
+     hipstopgm - convert a HIPS file into a portable graymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     hhhiiipppssstttooopppgggmmm [_h_i_p_s_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a HIPS file as input.  Produces a portable graymap as output.
+
+     If the HIPS file contains more than one frame in sequence, hipstopgm will
+     concatenate all the frames vertically.
+
+     HIPS  is  a  format  developed  at  the  Human   Information   Processing
+     Laboratory, NYU.
+
+SSSEEEEEE AAALLLSSSOOO
+     pgm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                24 August 89                                 1
+
+

@@ -1,0 +1,66 @@
+
+
+g3topbm(1)                 Unix Programmer's Manual                 g3topbm(1)
+
+
+NNNAAAMMMEEE
+     g3topbm - convert a Group 3 FAX file into a portable bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     ggg333tttooopppbbbmmm [-kkkllluuudddgggeee] [-rrreeevvveeerrrssseeebbbiiitttsss] [-ssstttrrreeetttccchhh] [_g_3_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a Group 3 FAX file as input.  Produces a portable bitmap as output.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---kkkllluuudddgggeee
+          Tells _g_3_t_o_p_b_m to ignore the first few lines of the  file;  sometimes
+          FAX files have some junk at the beginning.
+
+     ---rrreeevvveeerrrssseeebbbiiitttsss
+          Tells _g_3_t_o_p_b_m to interpret bits least-significant first, instead  of
+          the  default  most-significant first.  Apparently some FAX modems do
+          it one way and others do it the other way.  If you get a whole bunch
+          of "bad code word" messages, try using this flag.
+
+     ---ssstttrrreeetttccchhh
+          Tells _g_3_t_o_p_b_m to stretch the image vertically  by  duplicating  each
+          row.  This is for the low-quality transmission mode.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+RRREEEFFFEEERRREEENNNCCCEEESSS
+     The standard for Group 3 FAX is defined in CCITT Recommendation T.4.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbmtog3(1), pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Paul Haeberli <paul@manray.sgi.com>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               02 October 1989                               1
+
+

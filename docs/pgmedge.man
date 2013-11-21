@@ -1,0 +1,66 @@
+
+
+pgmedge(1)                 Unix Programmer's Manual                 pgmedge(1)
+
+
+NNNAAAMMMEEE
+     pgmedge - edge-detect a portable graymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppgggmmmeeedddgggeee [_p_g_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable graymap as input.  Outlines  the  edges,  and  writes  a
+     portable   graymap   as  output.   Piping  the  result  through  pppgggmmmtttooopppbbbmmm
+     ---ttthhhrrreeessshhhooolllddd and playing with the threshold value will give a bitmap of the
+     edges.
+
+     The edge detection technique used is to take the Pythagorean sum  of  two
+     Sobel  gradient  operators at 90 degrees to each other.  For more details
+     see "Digital Image Processing" by Gonzalez and Wintz, chapter 7.
+
+SSSEEEEEE AAALLLSSSOOO
+     pgmenhance(1), pgmtopbm(1), pgm(5), pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              04 February 1990                               1
+
+

@@ -1,0 +1,66 @@
+
+
+anytopnm(1)                Unix Programmer's Manual                anytopnm(1)
+
+
+NNNAAAMMMEEE
+     anytopnm - attempt to convert an unknown type of image file to a portable
+     anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     aaannnyyytttooopppnnnmmm _f_i_l_e
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Uses the _f_i_l_e program, possibly  augmented  by  the  magic  numbers  file
+     included  with  PBMPLUS,  to try to figure out what type of image file it
+     is.  If that fails (very few image formats have magic numbers), looks  at
+     the filename extension.  If that fails, punts.
+
+     The type of the output file depends on the input file.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmfile(1), pnm(5), file(1)
+
+BBBUUUGGGSSS
+     It's a script.  Scripts are not portable to non-Unix environments.
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                27 July 1990                                 1
+
+

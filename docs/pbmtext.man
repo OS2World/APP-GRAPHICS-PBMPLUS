@@ -1,0 +1,66 @@
+
+
+pbmtext(1)                 Unix Programmer's Manual                 pbmtext(1)
+
+
+NNNAAAMMMEEE
+     pbmtext - render text into a bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmttteeexxxttt [-fffooonnnttt _f_o_n_t_f_i_l_e] [_t_e_x_t]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+
+     Takes the specified text, either a single line from the command  line  or
+     multiple lines from standard input, and renders it into a bitmap.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     By default, pbmtext uses a built-in font.  You can also specify your  own
+     font  with the ---fffooonnnttt flag.  The _f_o_n_t_f_i_l_e is a pbm file, created in a very
+     specific way.  In your window system of  choice,  display  the  following
+     text in the desired (fixed-width) font:
+
+         M ",/^_[`jpqy| M
+
+         /  !"#$%&'()*+ /
+         < ,-./01234567 <
+         > 89:;<=>?@ABC >
+         @ DEFGHIJKLMNO @
+         _ PQRSTUVWXYZ[ _
+         { \]^_`abcdefg {
+         } hijklmnopqrs }
+         ~ tuvwxyz{|}~  ~
+
+         M ",/^_[`jpqy| M
+
+     Do a screen grab or window dump of that text,  using  for  instance  _x_w_d,
+     _x_g_r_a_b_s_c,  or  _s_c_r_e_e_n_d_u_m_p.   Convert  the  result  into  a  pbm  file.  If
+     necessary, use _p_n_m_c_u_t to remove everything except the text.  Finally, run
+     it  through _p_n_m_c_r_o_p to make sure the edges are right up against the text.
+     _p_b_m_t_e_x_t can figure out the sizes and spacings from that.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbm(5), pnmcut(1), pnmcrop(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               5 January 1991                                1
+
+

@@ -1,0 +1,66 @@
+
+
+pnmpaste(1)                Unix Programmer's Manual                pnmpaste(1)
+
+
+NNNAAAMMMEEE
+     pnmpaste - paste a rectangle into a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmpppaaasssttteee _f_r_o_m_p_n_m_f_i_l_e _x _y [_i_n_t_o_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads two portable anymaps as input.  Inserts the first anymap  into  the
+     second at the specified location, and produces a portable anymap the same
+     size as the second as output.  If the second anymap is not specified,  it
+     is  read from stdin.  The _x and _y can be negative, in which case they are
+     interpreted relative to the right and bottom of the anymap, respectively.
+
+     This tool is most useful in combination with _p_n_m_c_u_t.   For  instance,  if
+     you  want to edit a small segment of a large image, and your image editor
+     is TOO STUPID to edit the large image, you can cut out  the  segment  you
+     are interested in, edit it, and then paste it back in.
+
+     The _p_b_m_p_a_s_t_e tool is like this one, except that since it only has to work
+     with bitmaps, it implements bitblt-style logical operations.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbmpaste(1), pnmcut(1), pnm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                07 April 1989                                1
+
+

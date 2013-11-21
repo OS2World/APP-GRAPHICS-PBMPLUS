@@ -1,0 +1,66 @@
+
+
+pbmreduce(1)               Unix Programmer's Manual               pbmreduce(1)
+
+
+NNNAAAMMMEEE
+     pbmreduce - read a portable bitmap and reduce it N times
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmrrreeeddduuuccceee [-fffllloooyyyddd|-fffsss|-ttthhhrrreeessshhhooolllddd] [-vvvaaallluuueee _v_a_l] _N [_p_b_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable bitmap as input.  Reduces it  by  a  factor  of  _N,  and
+     produces a portable bitmap as output.
+
+     _p_b_m_r_e_d_u_c_e duplicates a lot of the functionality of _p_g_m_t_o_p_b_m; you could do
+     something like pppnnnmmmssscccaaallleee ||| pppgggmmmtttooopppbbbmmm,,, but _p_b_m_r_e_d_u_c_e is a lot faster.
+
+     _p_b_m_r_e_d_u_c_e can be used to "re-halftone" an image.  Let's say  you  have  a
+     scanner  that  only  produces  black&white,  not grayscale, and it does a
+     terrible job of halftoning (most b&w scanners fit this description).  One
+     way  to fix the halftoning is to scan at the highest possible resolution,
+     say 300 dpi, and then reduce by a factor of three or so using  _p_b_m_r_e_d_u_c_e.
+     You  can  even  correct  the  brightness of an image, by using the ---vvvaaallluuueee
+     flag.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     By  default,  the  halftoning   after   the   reduction   is   done   via
+     boustrophedonic  Floyd-Steinberg error diffusion; however, the ---ttthhhrrreeessshhhooolllddd
+     flag can be used to  specify  simple  thresholding.   This  gives  better
+     results when reducing line drawings.
+
+     The ---vvvaaallluuueee flag alters the thresholding value for all quantizations.   It
+     should  be a real number between 0 and 1.  Above 0.5 means darker images;
+     below 0.5 means lighter.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmenlarge(1), pnmscale(1), pgmtopbm(1), pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1988 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               02 August 1989                                1
+
+

@@ -1,0 +1,66 @@
+
+
+pnmcrop(1)                 Unix Programmer's Manual                 pnmcrop(1)
+
+
+NNNAAAMMMEEE
+     pnmcrop - crop a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmcccrrroooppp [-wwwhhhiiittteee|-bbblllaaaccckkk] [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable anymap as input.  Removes edges that are the  background
+     color, and produces a portable anymap as output.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     By default, it makes a guess as to what the background color is.  You can
+     override the default with the ---wwwhhhiiittteee and ---bbblllaaaccckkk flags.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmcut(1), pnm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              25 February 1989                               1
+
+

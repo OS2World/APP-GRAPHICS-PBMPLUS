@@ -1,0 +1,132 @@
+
+
+ppmpat(1)                  Unix Programmer's Manual                  ppmpat(1)
+
+
+NNNAAAMMMEEE
+     ppmpat - make a pretty pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     ppppppmmmpppaaattt ---gggiiinnnggghhhaaammm222|-ggg222|-gggiiinnnggghhhaaammm333|-ggg333|-mmmaaadddrrraaasss _w_i_d_t_h _h_e_i_g_h_t
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Produces a portable pixmap of the specified  width  and  height,  with  a
+     pattern in it.
+
+     This program is mainly to demonstrate use  of  the  ppmdraw  routines,  a
+     simple  but powerful drawing library.  See the ppmdraw.h include file for
+     more info on using these routines.  Still, some of the  patterns  can  be
+     rather  pretty.   If  you have a color workstation, something like ppppppmmmpppaaattt
+     ---sssqqquuuiiiggg 333000000 333000000 ||| ppppppmmmqqquuuaaannnttt 111222888 should generate a nice background.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     The different flags specify various different pattern types:
+
+     ---gggiiinnnggghhhaaammm222
+          A gingham check pattern.  Can be tiled.
+
+     ---gggiiinnnggghhhaaammm333
+          A slightly more complicated gingham.  Can be tiled.
+
+     ---mmmaaadddrrraaasss
+          A madras plaid.  Can be tiled.
+
+     ---tttaaarrrtttaaannn
+          A tartan plaid.  Can be tiled.
+
+     ---pppooollleeesss
+          Color gradients centered on randomly-placed poles.  May need  to  be
+          run through _p_p_m_q_u_a_n_t.
+
+     ---sssqqquuuiiiggg
+          Squiggley tubular pattern.  Can  be  tiled.   May  need  to  be  run
+          through _p_p_m_q_u_a_n_t.
+
+     ---cccaaammmooo
+          Camouflage pattern.  May need to be run through _p_p_m_q_u_a_n_t.
+
+     ---aaannntttiiicccaaammmooo
+          Anti-camouflage pattern - like -camo, but ultra-bright colors.   May
+          need to be run through _p_p_m_q_u_a_n_t.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+RRREEEFFFEEERRREEENNNCCCEEESSS
+     Some of the patterns are from "Designer's Guide to  Color  3"  by  Jeanne
+     Allen.
+
+
+
+
+
+
+                              04 September 1989                              1
+
+
+
+
+ppmpat(1)                  Unix Programmer's Manual                  ppmpat(1)
+
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmtile(1), ppmquant(1), ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              04 September 1989                              2
+
+

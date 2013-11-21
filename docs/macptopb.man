@@ -1,0 +1,66 @@
+
+
+macptopbm(1)               Unix Programmer's Manual               macptopbm(1)
+
+
+NNNAAAMMMEEE
+     macptopbm - convert a MacPaint file into a portable bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     mmmaaacccppptttooopppbbbmmm [-eeexxxtttrrraaassskkkiiippp _N] [_m_a_c_p_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a MacPaint file as input.  Produces a portable bitmap as output.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---eeexxxtttrrraaassskkkiiippp
+          This  flag  is  to  get  around  a  problem  with  some  methods  of
+          transferring  files  from  the Mac world to the Unix world.  Most of
+          these methods leave the Mac files alone, but a few of them  add  the
+          "finderinfo"  data  onto  the front of the Unix file.  This means an
+          extra 128 bytes to skip over when reading the file.  The symptom  to
+          watch  for is that the resulting PBM file looks shifted to one side.
+          If you get this, try ---eeexxxtttrrraaassskkkiiippp 128, and if that still doesn't  look
+          right try another value.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     picttoppm(1), pbmtomacp(1), pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1988  by  Jef  Poskanzer.   The  MacPaint-reading  code  is
+     copyright (c) 1987 by Patrick J. Naughton (naughton@wind.sun.com).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                29 March 1989                                1
+
+

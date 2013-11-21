@@ -1,0 +1,66 @@
+
+
+mgrtopbm(1)                Unix Programmer's Manual                mgrtopbm(1)
+
+
+NNNAAAMMMEEE
+     mgrtopbm - convert a MGR bitmap into a portable bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     mmmgggrrrtttooopppbbbmmm [_m_g_r_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a MGR bitmap as input.  Produces a portable bitmap as output.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbmtomgr(1), pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               24 January 1989                               1
+
+

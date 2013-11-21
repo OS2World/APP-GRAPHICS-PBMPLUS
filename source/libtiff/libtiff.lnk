@@ -1,0 +1,27 @@
+tif_ccittrle.obj +
+tif_close.obj +
+tif_compat.obj +
+tif_compress.obj +
+tif_dir.obj +
+tif_dumpmode.obj +
+tif_error.obj +
+tif_jpeg.obj +
+tif_flush.obj +
+tif_lzw.obj +
+tif_open.obj +
+tif_packbits.obj +
+tif_print.obj +
+tif_read.obj +
+tif_strip.obj +
+tif_swab.obj +
+tif_thunder.obj +
+tif_tile.obj +
+tif_warning.obj +
+tif_write.obj +
+tif_next.obj +
+tif_fax3.obj +
+tif_fax4.obj
+libtiff.dll
+
+/nod dde4sbso
+libtiff

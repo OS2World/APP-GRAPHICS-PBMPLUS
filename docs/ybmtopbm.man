@@ -1,0 +1,66 @@
+
+
+ybmtopbm(1)                Unix Programmer's Manual                ybmtopbm(1)
+
+
+NNNAAAMMMEEE
+     ybmtopbm - convert a Bennet Yee "face" file into a portable bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     yyybbbmmmtttooopppbbbmmm [_f_a_c_e_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a file acceptable to the  _f_a_c_e  and  _x_b_m  programs  by  Bennet  Yee
+     (bsy+@cs.cmu.edu).  Writes a portable bitmap as output.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbmtoybm(1), pbm(5), face(1), face(5), xbm(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jamie Zawinski and Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                06 March 1990                                1
+
+

@@ -1,0 +1,66 @@
+
+
+rasttopnm(1)               Unix Programmer's Manual               rasttopnm(1)
+
+
+NNNAAAMMMEEE
+     rasttopnm - convert a Sun raster file into a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     rrraaasssttttttooopppnnnmmm [_r_a_s_t_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a Sun raster file as input.  Produces a portable anymap as  output.
+     The  type  of the output file depends on the input file - if it's black &
+     white, a _p_b_m file is written, else if it's grayscale a _p_g_m file,  else  a
+     _p_p_m file.  The program tells you which type it is writing.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmtorast(1), pnm(5)
+
+BBBUUUGGGSSS
+     This program is a twisty little maze of #ifdefs, all different.
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               13 January 1991                               1
+
+

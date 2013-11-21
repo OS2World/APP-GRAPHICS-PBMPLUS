@@ -1,0 +1,66 @@
+
+
+pnmtorast(1)               Unix Programmer's Manual               pnmtorast(1)
+
+
+NNNAAAMMMEEE
+     pnmtorast - convert a portable pixmap into a Sun raster file
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmtttooorrraaasssttt [-ssstttaaannndddaaarrrddd|-rrrllleee] [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable pixmap as input.  Produces a Sun raster file as output.
+
+     Color values in Sun raster files are eight bits wide, so  _p_n_m_t_o_r_a_s_t  will
+     automatically  scale  colors  to have a maxval of 255.  An extra _p_n_m_d_e_p_t_h
+     step is not necessary.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     The ---ssstttaaannndddaaarrrddd flag forces the result to be in RT_STANDARD form; the  ---rrrllleee
+     flag,  RT_BYTE_ENCODED,  which  is smaller but, well, less standard.  The
+     default is ---rrrllleee.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     rasttopnm(1), pnm(5)
+
+BBBUUUGGGSSS
+     This program is a twisty little maze of #ifdefs, all different.
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               12 January 1991                               1
+
+

@@ -1,0 +1,66 @@
+
+
+ppmquantall(1)             Unix Programmer's Manual             ppmquantall(1)
+
+
+NNNAAAMMMEEE
+     ppmquantall - run ppmquant on a bunch of files all at once, so they share
+     a common colormap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     ppppppmmmqqquuuaaannntttaaallllll _n_c_o_l_o_r_s _p_p_m_f_i_l_e ...
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Takes a bunch of portable pixmap as input.   Chooses  _n_c_o_l_o_r_s  colors  to
+     best  represent  all  of  the images, maps the existing colors to the new
+     ones, and ooovvveeerrrwwwrrriiittteeesss ttthhheee iiinnnpppuuuttt fffiiillleeesss with the new quantized versions.
+
+     Verbose explanation: Let's say you've got a dozen pixmaps that  you  want
+     to  display  on  the  screen  all at the same time.  Your screen can only
+     display 256 different colors, but the pixmaps have a total of a  thousand
+     or  so different colors.  For a single pixmap you solve this problem with
+     _p_p_m_q_u_a_n_t; this script solves it for multiple pixmaps.   All  it  does  is
+     concatenate  them together into one big pixmap, run _p_p_m_q_u_a_n_t on that, and
+     then split it up into little pixmaps again.
+
+     (Note that another way to solve this problem is to pre-select  a  set  of
+     colors  and  then  use _p_p_m_q_u_a_n_t's ---mmmaaappp option to separately quantize each
+     pixmap to that set.)
+
+SSSEEEEEE AAALLLSSSOOO
+     ppmquant(1), ppm(5)
+
+BBBUUUGGGSSS
+     It's a csh script.  Csh scripts are not portable to System V.  Scripts in
+     general are not portable to non-Unix environments.
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                27 July 1990                                 1
+
+

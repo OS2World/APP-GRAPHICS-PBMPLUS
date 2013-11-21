@@ -1,0 +1,66 @@
+
+
+sputoppm(1)                Unix Programmer's Manual                sputoppm(1)
+
+
+NNNAAAMMMEEE
+     sputoppm - convert an Atari uncompressed Spectrum file  into  a  portable
+     pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     ssspppuuutttoooppppppmmm [_s_p_u_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads an Atari uncompressed Spectrum file as input.  Produces a  portable
+     pixmap as output.
+
+SSSEEEEEE AAALLLSSSOOO
+     spctoppm(1), ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Steve Belczyk (seb3@gte.com) and Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                19 July 1990                                 1
+
+

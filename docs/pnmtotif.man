@@ -1,0 +1,66 @@
+
+
+pnmtotiff(1)               Unix Programmer's Manual               pnmtotiff(1)
+
+
+NNNAAAMMMEEE
+     pnmtotiff - convert a a portable anymap into a TIFF file
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmtttoootttiiiffffff [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable anymap as input.  Produces a TIFF file as output.
+
+BBBUUUGGGSSS
+     This program is not self-contained.  To use it you must  fetch  the  TIFF
+     Software  package  listed in the OTHER.SYSTEMS file and configure PBMPLUS
+     to  use  libtiff.   See  PBMPLUS's   Makefile   for   details   on   this
+     configuration.
+
+SSSEEEEEE AAALLLSSSOOO
+     tifftopnm(1), pnm(5)
+
+BBBUUUGGGSSS
+     This program is a twisty little maze of #ifdefs, all different.
+
+AAAUUUTTTHHHOOORRR
+     Derived by Jef Poskanzer from ras2tiff.c, which is Copyright (c) 1990  by
+     Sun     Microsystems,     Inc.      Author:     Patrick    J.    Naughton
+     (naughton@wind.sun.com).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               13 January 1991                               1
+
+

@@ -1,0 +1,66 @@
+
+
+pbmtoybm(1)                Unix Programmer's Manual                pbmtoybm(1)
+
+
+NNNAAAMMMEEE
+     pgmtoybm - convert a portable bitmap into a Bennet Yee "face" file
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmtttoooyyybbbmmm [_p_b_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable bitmap as input.  Produces as output a  file  acceptable
+     to the _f_a_c_e and _x_b_m programs by Bennet Yee (bsy+@cs.cmu.edu).
+
+SSSEEEEEE AAALLLSSSOOO
+     ybmtopbm(1), pbm(5), face(1), face(5), xbm(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Jamie Zawinski and Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                06 March 1990                                1
+
+

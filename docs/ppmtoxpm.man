@@ -1,0 +1,66 @@
+
+
+ppmtoxpm(1)                Unix Programmer's Manual                ppmtoxpm(1)
+
+
+NNNAAAMMMEEE
+     ppmtoxpm - convert a portable pixmap into an X11 pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     ppppppmmmtttoooxxxpppmmm [-nnnaaammmeee _x_p_m_n_a_m_e] [_p_p_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable pixmap as input.  Produces X11 pixmap (XPM) as output.
+
+     If the program was compiled with an rgb database  specified,  and  a  RGB
+     value  from the ppm input matches a RGB value from the database, then the
+     corresponding color name mnemonic is printed in the XPM's  colormap.   If
+     no  rgb  database was compiled in, or if the RGB values don't match, then
+     the color  will  be  printed  with  the  #RGB,  #RRGGBB,  #RRRGGGBBB,  or
+     #RRRRGGGGBBBB hexadecimal format.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---nnnaaammmeee
+          Allows you to specify the prefix string  which  is  printed  in  the
+          resulting  XPM  output.   If  not  specified,  will  default  to the
+          filename (without extension) of the ppmfile argument.  If  ---nnnaaammmeee  is
+          not  specified  and  no ppmfile is specified (i.e. piped input), the
+          prefix string will default to the string "noname".
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+EEEXXXAAAMMMPPPLLLEEE
+     To convert the file "dot" (found in /usr/include/X11/bitmaps),  from  xbm
+     to xpm one could specify
+
+          xbmtopbm dot | ppmtoxpm -name dot
+
+BBBUUUGGGSSS
+     An option to match the closest (rather than exact)  color  name  mnemonic
+     from the rgb text would be a desirable enhancement.
+
+     Truncation of the least significant bits of a RGB  value  may  result  in
+     nonexact matches when performing color name mnemonic lookups.
+
+SSSEEEEEE AAALLLSSSOOO
+     xpmtoppm(1), ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1990 by Mark W. Snitily.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                26 June 1990                                 1
+
+

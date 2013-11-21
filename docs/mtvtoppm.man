@@ -1,0 +1,66 @@
+
+
+mtvtoppm(1)                Unix Programmer's Manual                mtvtoppm(1)
+
+
+NNNAAAMMMEEE
+     mtvtoppm - convert output from the MTV or PRT ray tracers into a portable
+     pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     mmmtttvvvtttoooppppppmmm [_m_t_v_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads an input file from Mark VanDeWettering's MTV ray tracer.   Produces
+     a portable pixmap as output.
+
+     The PRT raytracer also produces this format.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              02 February 1989                               1
+
+

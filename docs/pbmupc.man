@@ -1,0 +1,66 @@
+
+
+pbmupc(1)                  Unix Programmer's Manual                  pbmupc(1)
+
+
+NNNAAAMMMEEE
+     pbmupc - create a Universal Product Code bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmuuupppccc [-sss111|-sss222] _t_y_p_e _m_a_n_u_f_a_c _p_r_o_d_u_c_t
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Generates a Universal Product Code symbol.  The three  arguments  are:  a
+     one  digit product type, a five digit manufacturer code, and a five digit
+     product code.  For example, "0 72890 00011" is the code for Heineken.
+
+     As presently configured, _p_b_m_u_p_c produces a bitmap 230 bits wide  and  175
+     bits  high.   The  size  can  be  altered  by changing the defines at the
+     beginning of the program, or by running the output through _p_n_m_e_n_l_a_r_g_e  or
+     _p_n_m_s_c_a_l_e.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     The ---sss111 and ---sss222 flags select the style of UPC to generate.  The  default,
+     ---sss111, looks more or less like this:
+      ||||||||||||||||
+      ||||||||||||||||
+      ||||||||||||||||
+      ||||||||||||||||
+     0||12345||67890||5
+     The other style, ---sss222, puts the product type digit higher up, and  doesn't
+     display the checksum digit:
+      ||||||||||||||||
+      ||||||||||||||||
+     0||||||||||||||||
+      ||||||||||||||||
+      ||12345||67890||
+
+SSSEEEEEE AAALLLSSSOOO
+     pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                14 March 1989                                1
+
+

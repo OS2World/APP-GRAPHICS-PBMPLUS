@@ -1,0 +1,66 @@
+
+
+pnmscale(1)                Unix Programmer's Manual                pnmscale(1)
+
+
+NNNAAAMMMEEE
+     pnmscale - scale a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmssscccaaallleee _s [_p_n_m_f_i_l_e]
+     pppnnnmmmssscccaaallleee ---xxxsssiiizzzeee|-wwwiiidddttthhh|-yyysssiiizzzeee|-hhheeeiiiggghhhttt _s [_p_n_m_f_i_l_e]
+     pppnnnmmmssscccaaallleee ---xxxssscccaaallleee|-yyyssscccaaallleee _s [_p_n_m_f_i_l_e]
+     pppnnnmmmssscccaaallleee ---xxxssscccaaallleee|-xxxsssiiizzzeee|-wwwiiidddttthhh _s ---yyyssscccaaallleee|-yyysssiiizzzeee|-hhheeeiiiggghhhttt _s [_p_n_m_f_i_l_e]
+     pppnnnmmmssscccaaallleee ---xxxyyysssiiizzzeee _x _y [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable anymap as input.  Scales it by the specified  factor  or
+     factors  and  produces a portable anymap as output.  If the input file is
+     in color, the output will be too, otherwise it will  be  grayscale.   You
+     can both enlarge (scale factor > 1) and reduce (scale factor < 1).
+
+     You can specify one dimension as a pixel size, and  the  other  dimension
+     will be scaled correspondingly.
+
+     You can specify one dimension as a scale, and the  other  dimension  will
+     not be scaled.
+
+     You can specify different sizes or scales for each axis.
+
+     Or, you can use the special ---xxxyyysssiiizzzeee flag, which fits the image  into  the
+     specified size without changing the aspect ratio.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+     If you enlarge by a factor of 3  or  more,  you  should  probably  add  a
+     _p_n_m_s_m_o_o_t_h  step;  otherwise,  you  can  see  the  original  pixels in the
+     resulting image.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbmreduce(1), pnmenlarge(1), pnmsmooth(1), pnm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               12 January 1991                               1
+
+

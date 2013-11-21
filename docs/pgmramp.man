@@ -1,0 +1,66 @@
+
+
+pgmramp(1)                 Unix Programmer's Manual                 pgmramp(1)
+
+
+NNNAAAMMMEEE
+     pgmramp - generate a grayscale ramp
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppgggmmmrrraaammmppp ---lllrrr|-tttbbb|-rrreeeccctttaaannngggllleee|-eeelllllliiipppssseee _w_i_d_t_h _h_e_i_g_h_t
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Generates a graymap of the specified  size  containing  a  black-to-white
+     ramp.   These  ramps  are useful for multiplying with other images, using
+     the _p_n_m_a_r_i_t_h tool.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---lllrrr  A left to right ramp.
+
+     ---tttbbb  A top to bottom ramp.
+
+     ---rrreeeccctttaaannngggllleee
+          A rectangular ramp.
+
+     ---eeelllllliiipppssseee
+          An elliptical ramp.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnmarith(1), pgm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              24 November 1989                               1
+
+

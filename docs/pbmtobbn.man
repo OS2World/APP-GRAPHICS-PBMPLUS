@@ -1,0 +1,66 @@
+
+
+pbmtobg(1)                 Unix Programmer's Manual                 pbmtobg(1)
+
+
+NNNAAAMMMEEE
+     pbmtobg - convert a portable bitmap into BitGraph graphics
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmtttooobbbggg [_r_a_s_t_e_r_o_p] [_x _y] < _p_b_m_f_i_l_e
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable bitmap as input.  Produces BBN BitGraph terminal Display
+     Pixel Data (DPD) sequence as output.
+
+     The rasterop can be specified on the command line.  If this is omitted, 3
+     (replace)  will  be  used.   A  position in (x,y) coordinates can also be
+     specified.  If both are given, the rasterop comes  first.   The  portable
+     bitmap is always taken from the standard input.
+
+     Note that there is no bgtopbm tool.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright 1989 by Mike Parker.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 16 May 1989                                 1
+
+

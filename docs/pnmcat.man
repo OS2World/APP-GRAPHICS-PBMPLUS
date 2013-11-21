@@ -1,0 +1,66 @@
+
+
+pnmcat(1)                  Unix Programmer's Manual                  pnmcat(1)
+
+
+NNNAAAMMMEEE
+     pnmcat - concatenate portable anymaps
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmcccaaattt [-wwwhhhiiittteee|-bbblllaaaccckkk] ---llleeeffftttrrriiiggghhhttt|-lllrrr  [-jjjtttoooppp|-jjjbbbooottttttooommm]  _p_n_m_f_i_l_e  _p_n_m_f_i_l_e
+     ...
+     pppnnnmmmcccaaattt [-wwwhhhiiittteee|-bbblllaaaccckkk] ---tttooopppbbbooottttttooommm|-tttbbb  [-jjjllleeefffttt|-jjjrrriiiggghhhttt]  _p_n_m_f_i_l_e  _p_n_m_f_i_l_e
+     ...
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads portable anymaps as input.  Concatenates them either left to  right
+     or top to bottom, and produces a portable anymap as output.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     If the anymaps are not all the same height (left-right)  or  width  (top-
+     bottom),  the  smaller  ones  have  to be justified with the largest.  By
+     default, they get centered, but you can specify one  side  or  the  other
+     with one of the -j* flags.  So, ---tttooopppbbbooottttttooommm ---jjjllleeefffttt would stack the anymaps
+     on top of each other, flush with the left edge.
+
+     The ---wwwhhhiiittteee and ---bbblllaaaccckkk flags specify what color to  use  to  fill  in  the
+     extra  space when doing this justification.  If neither is specified, the
+     program makes a guess.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                12 March 1989                                1
+
+

@@ -1,0 +1,66 @@
+
+
+gouldtoppm(1)              Unix Programmer's Manual              gouldtoppm(1)
+
+
+NNNAAAMMMEEE
+     gouldtoppm - convert Gould scanner file into a portable pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     gggooouuullldddtttoooppppppmmm [_g_o_u_l_d_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a file produced by the Gould scanner as input.  Produces a portable
+     pixmap as output.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright(C) 1990 by Stephen Paul Lesniewski
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 20 May 1990                                 1
+
+

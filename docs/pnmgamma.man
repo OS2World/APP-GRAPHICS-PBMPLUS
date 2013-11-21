@@ -1,0 +1,66 @@
+
+
+pnmgamma(1)                Unix Programmer's Manual                pnmgamma(1)
+
+
+NNNAAAMMMEEE
+     pnmgamma - perform gamma correction on a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmgggaaammmmmmaaa _v_a_l_u_e [_p_n_m_f_i_l_e]
+     pppnnnmmmgggaaammmmmmaaa _r_e_d_v_a_l_u_e _g_r_e_e_n_v_a_l_u_e _b_l_u_e_v_a_l_u_e [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a  portable  anymap  as  input.   Performs  gamma  correction,  and
+     produces a portable anymap as output.
+
+     The arguments specify what gamma value(s) to use.  A value of 1.0  leaves
+     the  image alone, less than one darkens it, and greater than one lightens
+     it.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1991 by Bill Davidson and Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               12 January 1991                               1
+
+

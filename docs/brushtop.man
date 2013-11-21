@@ -1,0 +1,66 @@
+
+
+brushtopbm(1)              Unix Programmer's Manual              brushtopbm(1)
+
+
+NNNAAAMMMEEE
+     brushtopbm - convert a doodle brush file into a portable bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     bbbrrruuussshhhtttooopppbbbmmm [_b_r_u_s_h_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a Xerox doodle brush file as input.  Produces a portable bitmap  as
+     output.
+
+     Note that there is currently no pbmtobrush tool.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1988 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               28 August 1988                                1
+
+

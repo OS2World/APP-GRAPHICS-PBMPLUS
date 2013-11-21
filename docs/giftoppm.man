@@ -1,0 +1,66 @@
+
+
+giftoppm(1)                Unix Programmer's Manual                giftoppm(1)
+
+
+NNNAAAMMMEEE
+     giftoppm - convert a GIF file into a portable pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     gggiiiffftttoooppppppmmm [-vvveeerrrbbbooossseee] [-cccooommmmmmeeennntttsss] [-iiimmmaaagggeee _N] [_G_I_F_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a GIF file for input, and outputs portable pixmap.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---vvveeerrrbbbooossseee
+          Produces verbose output about the GIF file input.
+
+     ---cccooommmmmmeeennntttsss
+          Only outputs GIF89 comment fields.
+
+     ---iiimmmaaagggeee
+          Output the specified gif image from the input gif archive  (where  _N
+          is  '1',  '2', '20'...).  Normally there is only one image per file,
+          so this option is not needed.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+BBBUUUGGGSSS
+     This does not correctly handle the Plain  Text  Extension  of  the  GIF89
+     standard, since I did not have any example input files containing them.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppmtogif(1), ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (c) 1990 by David Koblas (koblas@mips.com)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              21 December 1990                               1
+
+

@@ -1,0 +1,66 @@
+
+
+rawtopgm(1)                Unix Programmer's Manual                rawtopgm(1)
+
+
+NNNAAAMMMEEE
+     rawtopgm - convert raw grayscale bytes into a portable graymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     rrraaawwwtttooopppgggmmm [-hhheeeaaadddeeerrrssskkkiiippp _N] [-rrrooowwwssskkkiiippp _N] _w_i_d_t_h _h_e_i_g_h_t [_i_m_a_g_e_d_a_t_a]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads raw grayscale bytes as  input.   Produces  a  portable  graymap  as
+     output.  The input file is just grayscale bytes.  You have to specify the
+     width and height on the command line, since the program  obviously  can't
+     get  them  from  the  file.   The  maxval  is  assumed to be 255.  If the
+     resulting image is upside down, run it through pppnnnmmmfffllliiippp ---tttbbb ...
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---hhheeeaaadddeeerrrssskkkiiippp
+          If the file has a header, you can use this flag to skip over it.
+
+     ---rrrooowwwssskkkiiippp
+          If there is padding at the ends of the rows, you can  skip  it  with
+          this  flag.   Note  that rowskip can be a real number.  Amazingly, I
+          once had an image with 0.376 bytes of padding per row.  This  turned
+          out  to  be  due to a file-transfer problem, but I was still able to
+          read the image.
+
+SSSEEEEEE AAALLLSSSOOO
+     pgm(5), rawtoppm(1), pnmflip(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               15 December 89                                1
+
+

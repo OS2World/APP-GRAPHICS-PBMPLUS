@@ -1,0 +1,66 @@
+
+
+imgtoppm(1)                Unix Programmer's Manual                imgtoppm(1)
+
+
+NNNAAAMMMEEE
+     imgtoppm - convert an Img-whatnot file into a portable pixmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     iiimmmgggtttoooppppppmmm [_i_m_g_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads an Img-whatnot file  as  input.   Produces  a  portable  pixmap  as
+     output.   The Img-whatnot toolkit is available for FTP on venera.isi.edu,
+     along with numerous images in this format.
+
+SSSEEEEEE AAALLLSSSOOO
+     ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Based on a simple conversion program posted to comp.graphics by Ed Falk.
+
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              05 September 1989                              1
+
+

@@ -1,0 +1,66 @@
+
+
+pnmarith(1)                Unix Programmer's Manual                pnmarith(1)
+
+
+NNNAAAMMMEEE
+     pnmarith - perform arithmetic on two portable anymaps
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmaaarrriiittthhh ---aaadddddd|-sssuuubbbtttrrraaacccttt|-mmmuuullltttiiippplllyyy _p_n_m_f_i_l_e_1 _p_n_m_f_i_l_e_2
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads two portable anymaps as input.  Performs the  specified  arithmetic
+     operation,  and  produces  a  portable  anymap  as output.  The two input
+     anymaps must be the same width and height.
+
+     The arithmetic is performed  between  corresponding  pixels  in  the  two
+     anymaps, with maxval as 1.0, black as 0.0, and a linear scale in between.
+     Results that fall outside of [0..1) are truncated.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbmmask(1), pbmpaste(1), pnminvert(1), pnm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               13 January 1991                               1
+
+

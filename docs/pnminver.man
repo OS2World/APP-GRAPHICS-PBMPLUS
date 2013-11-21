@@ -1,0 +1,66 @@
+
+
+pnminvert(1)               Unix Programmer's Manual               pnminvert(1)
+
+
+NNNAAAMMMEEE
+     pnminvert - invert a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmiiinnnvvveeerrrttt [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable anymap  as  input.   Inverts  it  black  for  white  and
+     produces a portable anymap as output.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               08 August 1989                                1
+
+

@@ -1,0 +1,66 @@
+
+
+pnmdepth(1)                Unix Programmer's Manual                pnmdepth(1)
+
+
+NNNAAAMMMEEE
+     pnmdepth - change the maxval in a portable anymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmdddeeepppttthhh _n_e_w_m_a_x_v_a_l [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable anymap as input.   Scales  all  the  pixel  values,  and
+     writes  out  the image with the new maxval.  Scaling the colors down to a
+     smaller maxval will result in some loss of information.
+
+     Be careful of off-by-one  errors  when  choosing  the  new  maxval.   For
+     instance, if you want the color values to be five bits wide, use a maxval
+     of 31, not 32.
+
+SSSEEEEEE AAALLLSSSOOO
+     pnm(5), ppmquant(1)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               12 January 1991                               1
+
+

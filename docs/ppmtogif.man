@@ -1,0 +1,66 @@
+
+
+ppmtogif(1)                Unix Programmer's Manual                ppmtogif(1)
+
+
+NNNAAAMMMEEE
+     ppmtogif - convert a portable pixmap into a GIF file
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     ppppppmmmtttooogggiiifff [-iiinnnttteeerrrlllaaaccceee] [_p_p_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable pixmap as input.  Produces a GIF file as output.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     ---iiinnnttteeerrrlllaaaccceee
+          Tells the program to produce an interlaced GIF file.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     giftoppm(1), ppm(5)
+
+AAAUUUTTTHHHOOORRR
+     Based on GIFENCOD by David Rowley <mgardi@watdcsu.waterloo.edu>.  Lempel-
+     Zim compression based on "compress".
+
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              01 September 1989                              1
+
+

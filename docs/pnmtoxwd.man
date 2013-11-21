@@ -1,0 +1,66 @@
+
+
+pnmtoxwd(1)                Unix Programmer's Manual                pnmtoxwd(1)
+
+
+NNNAAAMMMEEE
+     pnmtoxwd - convert a portable anymap into an X11 window dump
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppnnnmmmtttoooxxxwwwddd [-dddiiirrreeeccctttcccooolllooorrr] [_p_n_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable anymap as input.  Produces an X11 window dump as output.
+     This window dump can be displayed using the xwud tool.
+
+     Normally, pnmtoxwd produces a StaticGray dump file for _p_b_m and _p_g_m files.
+     For  _p_p_m, it writes a PseudoColor dump file if there are up to 256 colors
+     in the input, and a DirectColor dump file  otherwise.   The  ---dddiiirrreeeccctttcccooolllooorrr
+     flag can be used to force a DirectColor dump.
+
+SSSEEEEEE AAALLLSSSOOO
+     xwdtopnm(1), pnm(5), xwud(1)
+
+BBBUUUGGGSSS
+     This program is a twisty little maze of #ifdefs, all different.
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1989, 1991 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               11 January 1991                               1
+
+

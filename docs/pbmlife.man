@@ -1,0 +1,66 @@
+
+
+pbmlife(1)                 Unix Programmer's Manual                 pbmlife(1)
+
+
+NNNAAAMMMEEE
+     pbmlife - apply Conway's rules of Life to a portable bitmap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmllliiifffeee [_p_b_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable bitmap as input.  Applies the rules of Life  to  it  for
+     one generation, and produces a portable bitmap as output.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbm(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1988 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              14 December 1988                               1
+
+

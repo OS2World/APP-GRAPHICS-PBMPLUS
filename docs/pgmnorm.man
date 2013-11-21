@@ -1,0 +1,66 @@
+
+
+pgmnorm(1)                 Unix Programmer's Manual                 pgmnorm(1)
+
+
+NNNAAAMMMEEE
+     pgmnorm - normalize the contrast in a portable graymap
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppgggmmmnnnooorrrmmm [-bbbpppeeerrrccceeennnttt _N | ---bbbvvvaaallluuueee _N] [-wwwpppeeerrrccceeennnttt _N | ---wwwvvvaaallluuueee _N] [_p_g_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable graymap as input.  Normalizes the  contrast  by  forcing
+     the  lightest  pixels to white, the darkest pixels to black, and linearly
+     rescaling the ones in between; and produces a portable graymap as output.
+
+OOOPPPTTTIIIOOONNNSSS
+
+     By default, the darkest 2 percent of all pixels are mapped to black,  and
+     the  lightest  1  percent  are  mapped  to white.  You can override these
+     percentages by using the  ---bbbpppeeerrrccceeennnttt  and  ---wwwpppeeerrrccceeennnttt  flags,  or  you  can
+     specify  the  exact  pixel  values  to be mapped by using the ---bbbvvvaaallluuueee and
+     ---wwwvvvaaallluuueee flags.  Appropriate numbers for the flags can be gotten from  the
+     _p_g_m_h_i_s_t  tool.   If  you  just  want to enhance the contrast, then choose
+     values at elbows in the histogram; e.g. if value 29 represents 3% of  the
+     image  but value 30 represents 20%, choose 30 for _b_v_a_l_u_e.  If you want to
+     lighten the image, then set _b_v_a_l_u_e to 0  and  just  fiddle  with  _w_v_a_l_u_e;
+     similarly,  to  darken  the  image,  set  _w_v_a_l_u_e  to maxval and play with
+     _b_v_a_l_u_e.
+
+     All flags can be abbreviated to their shortest unique prefix.
+
+SSSEEEEEE AAALLLSSSOOO
+     pgmhist(1), pgm(5)
+
+AAAUUUTTTHHHOOORRR
+     Partially based on the fbnorm filter in Michael Mauldin's "Fuzzy  Pixmap"
+     package.
+
+     Copyright (C) 1989 by Jef Poskanzer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              28 February 1989                               1
+
+

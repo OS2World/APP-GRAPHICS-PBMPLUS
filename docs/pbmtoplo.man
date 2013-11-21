@@ -1,0 +1,66 @@
+
+
+pbmtoplot(1)               Unix Programmer's Manual               pbmtoplot(1)
+
+
+NNNAAAMMMEEE
+     pbmtoplot - convert a portable bitmap into a Unix plot(5) file
+
+SSSYYYNNNOOOPPPSSSIIISSS
+     pppbbbmmmtttoooppplllooottt [_p_b_m_f_i_l_e]
+
+DDDEEESSSCCCRRRIIIPPPTTTIIIOOONNN
+     Reads a portable bitmap as input.  Produces a Unix _p_l_o_t file.
+
+     Note that there is no plottopbm tool - this transformation is one-way.
+
+SSSEEEEEE AAALLLSSSOOO
+     pbm(5), plot(5)
+
+AAAUUUTTTHHHOOORRR
+     Copyright (C) 1990 by Arthur David Olson.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              1 September 1990                               1
+
+
